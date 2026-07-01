@@ -1,5 +1,5 @@
 // ==========================================================================
-// UI STYLE ARCHIVE - INTERACTIVE CONTROLLER
+// UI STYLE ARCHIVE - INTERACTIVE CONTROLLER V2
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navigator.clipboard.writeText(text).then(() => {
       showToast(successMsg || 'Copied to clipboard!');
     }).catch(err => {
-      showToast('Copy failed. Please try manually.');
+      showToast('Copy failed. Please copy manually.');
       console.error(err);
     });
   }
@@ -32,17 +32,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.style-section');
 
   function showSectionByHash(hash) {
-    if (!hash) hash = '#skeuomorphism';
+    if (!hash) hash = '#art-deco';
     
-    // Find matching link
     let activeLink = document.querySelector(`.nav-item[href="${hash}"]`);
     if (!activeLink) return;
     
-    // Set active link in sidebar
     navItems.forEach(item => item.classList.remove('active'));
     activeLink.classList.add('active');
     
-    // Set active section in main area
     const targetId = hash.substring(1);
     sections.forEach(sec => {
       if (sec.id === targetId) {
@@ -52,11 +49,9 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Reset layout scroll to top on nav switch
     document.querySelector('.app-main').scrollTop = 0;
   }
 
-  // Monitor links click
   navItems.forEach(link => {
     link.addEventListener('click', (e) => {
       e.preventDefault();
@@ -66,7 +61,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Check initial hash
   if (window.location.hash) {
     showSectionByHash(window.location.hash);
   }
@@ -80,10 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
     showToast(appMain.classList.contains('bg-grid-visible') ? 'Grid pattern enabled!' : 'Grid pattern disabled!');
   });
 
-
   // --- Copy Actions: Swatches & Prompts ---
-  
-  // 1. Swatches copy click
   document.querySelectorAll('.color-swatch').forEach(swatch => {
     swatch.addEventListener('click', () => {
       const hex = swatch.getAttribute('data-hex');
@@ -91,11 +82,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 2. Prompt copy click
   document.querySelectorAll('.btn-copy-prompt').forEach(btn => {
     btn.addEventListener('click', () => {
       const promptText = btn.parentElement.querySelector('.prompt-text').textContent;
-      copyToClipboard(promptText, 'Copied AI prompt to clipboard!');
+      copyToClipboard(promptText, 'Copied Theme Recipe to clipboard!');
     });
   });
 
@@ -107,11 +97,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     tabs.forEach(tab => {
       tab.addEventListener('click', () => {
-        // Remove active states
         tabs.forEach(t => t.classList.remove('active'));
         panels.forEach(p => p.classList.remove('active'));
         
-        // Add active states
         tab.classList.add('active');
         const targetType = tab.getAttribute('data-tab');
         const activePanel = inspector.querySelector(`.tab-panel[id*="-${targetType}"]`);
@@ -121,7 +109,6 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Copy selected code button
     copyCodeBtn.addEventListener('click', () => {
       const activePanel = inspector.querySelector('.tab-panel.active');
       if (activePanel) {
@@ -132,22 +119,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // ==========================================================================
-  // SANDBOX LOGIC & INTERACTIVE PLAYS
+  // SANDBOX LOGIC & INTERACTIVE PLAYS (15 STYLES)
   // ==========================================================================
 
   // --- 01. SKEUOMORPHISM SANDBOX ---
-  
-  // 1. Sliding credit cards
   const skeuCards = document.querySelectorAll('.skeu-card');
   skeuCards.forEach(card => {
     card.addEventListener('click', (e) => {
-      e.stopPropagation(); // Avoid pocket click conflicts
-      
+      e.stopPropagation();
       const isPulled = card.classList.contains('pulled');
-      
-      // Reset other cards
       skeuCards.forEach(c => c.classList.remove('pulled'));
-      
       if (!isPulled) {
         card.classList.add('pulled');
         showToast('Card pulled out');
@@ -155,12 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Collapse cards if clicking wallet background
   document.querySelector('.skeu-wallet').addEventListener('click', () => {
     skeuCards.forEach(c => c.classList.remove('pulled'));
   });
 
-  // 2. Skeuomorphic Gain Dial
   const skeuKnob = document.getElementById('skeu-knob');
   const skeuGainText = document.getElementById('skeu-gain-val');
   let isKnobDragging = false;
@@ -170,13 +149,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const knobCenterX = knobRect.left + knobRect.width / 2;
     const knobCenterY = knobRect.top + knobRect.height / 2;
     
-    // Calculate angle in degrees
     const deltaX = clientX - knobCenterX;
     const deltaY = clientY - knobCenterY;
     let angleRad = Math.atan2(deltaY, deltaX);
-    let angleDeg = angleRad * (180 / Math.PI) + 90; // Offset alignment
+    let angleDeg = angleRad * (180 / Math.PI) + 90;
     
-    // Constrain knob limits (-140 to 140 degrees)
     if (angleDeg < -180) angleDeg += 360;
     if (angleDeg > 180) angleDeg -= 360;
     
@@ -186,10 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (angleDeg < minDeg) angleDeg = minDeg;
     if (angleDeg > maxDeg) angleDeg = maxDeg;
     
-    // Rotate DOM element
     skeuKnob.style.transform = `rotate(${angleDeg}deg)`;
-    
-    // Calculate percentage (0% to 100%)
     const pct = Math.round(((angleDeg - minDeg) / (maxDeg - minDeg)) * 100);
     skeuGainText.textContent = `${pct}%`;
   }
@@ -210,27 +184,8 @@ document.addEventListener('DOMContentLoaded', () => {
     isKnobDragging = false;
   });
 
-  // Dial touch support
-  skeuKnob.addEventListener('touchstart', (e) => {
-    isKnobDragging = true;
-    updateKnobAngle(e.touches[0].clientX, e.touches[0].clientY);
-    e.preventDefault();
-  });
-
-  document.addEventListener('touchmove', (e) => {
-    if (isKnobDragging) {
-      updateKnobAngle(e.touches[0].clientX, e.touches[0].clientY);
-    }
-  });
-
-  document.addEventListener('touchend', () => {
-    isKnobDragging = false;
-  });
-
 
   // --- 02. NEOMORPHISM SANDBOX ---
-  
-  // Power & EQ Button Toggles
   const powerBtn = document.getElementById('neo-btn-power');
   powerBtn.addEventListener('click', () => {
     powerBtn.classList.toggle('active');
@@ -242,7 +197,6 @@ document.addEventListener('DOMContentLoaded', () => {
     eqBtn.classList.toggle('active');
   });
 
-  // Neumorphic Dial Control
   const neoDial = document.getElementById('neo-volume-dial');
   const neoVolumeVal = document.getElementById('neo-volume-val');
   let isNeoDialDragging = false;
@@ -255,11 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let angleDeg = angleRad * (180 / Math.PI) + 90;
     
     if (angleDeg < 0) angleDeg += 360;
-    
-    // Rotate Dial
     neoDial.style.transform = `rotate(${angleDeg}deg)`;
-    
-    // Map angle to percentage (0% to 100%)
     const pct = Math.round((angleDeg / 360) * 100);
     neoVolumeVal.textContent = `${pct}%`;
   }
@@ -280,7 +230,6 @@ document.addEventListener('DOMContentLoaded', () => {
     isNeoDialDragging = false;
   });
 
-  // Slider Logic
   const sliderTrack = document.getElementById('neo-slider-track');
   const sliderFill = sliderTrack.querySelector('.neo-slider-fill');
   const sliderThumb = sliderTrack.querySelector('.neo-slider-thumb');
@@ -319,8 +268,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   // --- 04. CLAYMORPHISM SANDBOX ---
-  
-  // Toggles active state switching
   const clayToggleMute = document.getElementById('clay-toggle-mute');
   const clayToggleShadow = document.getElementById('clay-toggle-shadow');
   const clayCard = document.querySelector('.clay-card');
@@ -337,13 +284,11 @@ document.addEventListener('DOMContentLoaded', () => {
       clayCard.style.boxShadow = '0 20px 40px rgba(163, 216, 244, 0.35), inset 8px 8px 16px #ffffff, inset -8px -8px 16px rgba(163, 216, 244, 0.4)';
       clayAvatar.style.boxShadow = '0 10px 20px rgba(163, 216, 244, 0.5), inset 6px 6px 12px #ffffff, inset -6px -6px 12px rgba(0, 0, 0, 0.12)';
     } else {
-      // Stripped-down flat shadows
       clayCard.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05), inset 0px 0px 0px #fff';
       clayAvatar.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.08)';
     }
   });
 
-  // Hug/Squeeze button animation
   const clayBtn = document.querySelector('.clay-btn');
   clayBtn.addEventListener('click', () => {
     clayCard.style.transform = 'scale(0.92) rotate(2deg)';
@@ -371,19 +316,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
   spatialContainer.addEventListener('mousemove', (e) => {
     const rect = spatialPanel.getBoundingClientRect();
-    
-    // Relative coordinate percentages
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
     
     const pctX = (x / rect.width) * 100;
     const pctY = (y / rect.height) * 100;
     
-    // Set sheen position variables
     spatialPanel.style.setProperty('--mx', `${pctX}%`);
     spatialPanel.style.setProperty('--my', `${pctY}%`);
     
-    // Calculate rotation (-15deg to 15deg)
     const rotateY = -((x / rect.width) - 0.5) * 30;
     const rotateX = ((y / rect.height) - 0.5) * 30;
     
@@ -391,7 +332,6 @@ document.addEventListener('DOMContentLoaded', () => {
     spatialPanel.style.setProperty('--ry', `${rotateY}deg`);
   });
 
-  // Reset rotation when cursor leaves container
   spatialContainer.addEventListener('mouseleave', () => {
     spatialPanel.style.setProperty('--rx', '0deg');
     spatialPanel.style.setProperty('--ry', '0deg');
@@ -399,16 +339,13 @@ document.addEventListener('DOMContentLoaded', () => {
     spatialPanel.style.setProperty('--my', '50%');
   });
 
-  // Ambient environment switches
   spatialBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       spatialBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      
       const label = btn.querySelector('.label').textContent;
       showToast(`Selected Environment: ${label}`);
       
-      // Update background blur colors based on selected atmosphere
       const bg = document.querySelector('.spatial-bg-photo');
       if (label === 'Forest') {
         bg.style.filter = 'blur(25px) hue-rotate(60deg) brightness(0.3)';
@@ -418,6 +355,118 @@ document.addEventListener('DOMContentLoaded', () => {
         bg.style.filter = 'blur(25px) hue-rotate(-90deg) brightness(0.2)';
       }
     });
+  });
+
+
+  // --- 11. CYBERPUNK UI SANDBOX ---
+  const cyberBtn = document.getElementById('cyber-btn-override');
+  const cyberCard = document.querySelector('.cyber-card');
+
+  cyberBtn.addEventListener('click', () => {
+    cyberCard.style.animation = 'cyberGlitchPulse 0.3s steps(2) 2';
+    showToast('SYS.ALERT: OVERRIDE SEQUENCE DETECTED...');
+    
+    setTimeout(() => {
+      cyberCard.style.animation = '';
+    }, 600);
+  });
+
+
+  // --- 12. MATERIAL YOU SANDBOX ---
+  const materialFAB = document.getElementById('material-fab-compose');
+  const materialListItems = document.querySelectorAll('.material-list-item');
+
+  materialFAB.addEventListener('click', () => {
+    showToast('Material Ripple: Compose email triggered');
+  });
+
+  materialListItems.forEach(item => {
+    item.addEventListener('click', () => {
+      materialListItems.forEach(i => i.classList.remove('active'));
+      item.classList.add('active');
+      const text = item.querySelector('h4').textContent;
+      showToast(`Selected list: ${text}`);
+    });
+  });
+
+
+  // --- 13. Y2K / FRUTIGER AERO SANDBOX ---
+  const y2kBtnPlay = document.getElementById('y2k-btn-play');
+  const y2kBtnBubble = document.getElementById('y2k-btn-bubble');
+  const y2kContainer = document.querySelector('.bg-y2k-demo');
+  let y2kPlaying = false;
+
+  y2kBtnPlay.addEventListener('click', () => {
+    y2kPlaying = !y2kPlaying;
+    y2kBtnPlay.textContent = y2kPlaying ? '⏸' : '▶';
+    showToast(y2kPlaying ? 'Playing Audio: Oceanic Vista' : 'Audio Paused');
+  });
+
+  // Spawn bubbles physically
+  y2kBtnBubble.addEventListener('click', () => {
+    showToast('Spawning water bubbles...');
+    for (let i = 0; i < 5; i++) {
+      const bubble = document.createElement('div');
+      bubble.style.position = 'absolute';
+      bubble.style.width = `${Math.random() * 15 + 10}px`;
+      bubble.style.height = bubble.style.width;
+      bubble.style.borderRadius = '50%';
+      bubble.style.background = 'radial-gradient(circle at 35% 35%, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0.1) 60%, transparent 100%)';
+      bubble.style.border = '1px solid rgba(255,255,255,0.4)';
+      bubble.style.bottom = '10px';
+      bubble.style.left = `${Math.random() * 80 + 10}%`;
+      bubble.style.transition = 'all 2s ease-out';
+      bubble.style.zIndex = '5';
+      y2kContainer.appendChild(bubble);
+      
+      // Animate floating up
+      setTimeout(() => {
+        bubble.style.transform = `translateY(-300px) scale(${Math.random() * 0.5 + 0.8})`;
+        bubble.style.opacity = '0';
+      }, 50);
+
+      // Clean DOM
+      setTimeout(() => {
+        bubble.remove();
+      }, 2050);
+    }
+  });
+
+
+  // --- 14. SCI-FI HUD SANDBOX ---
+  const hudBtn = document.getElementById('hud-btn-lock');
+  const hudCard = document.querySelector('.hud-card');
+  const targetText = hudCard.querySelector('.target-locked-text');
+  let hudLocked = false;
+
+  hudBtn.addEventListener('click', () => {
+    hudLocked = !hudLocked;
+    if (hudLocked) {
+      hudCard.style.color = '#ff3b30';
+      hudCard.style.borderColor = 'rgba(255,59,48,0.7)';
+      targetText.textContent = 'TARGET LOCKED';
+      targetText.style.color = '#ff3b30';
+      hudBtn.textContent = 'CANCEL TARGET';
+      hudBtn.style.color = '#ff3b30';
+      hudBtn.style.borderColor = '#ff3b30';
+      showToast('HUD Lock-On Engaged!');
+    } else {
+      hudCard.style.color = '#00ffc4';
+      hudCard.style.borderColor = 'rgba(0, 255, 196, 0.25)';
+      targetText.textContent = 'TARGET IN RANGE';
+      targetText.style.color = '#00ffc4';
+      hudBtn.textContent = 'ENGAGE TARGET';
+      hudBtn.style.color = '#00ffc4';
+      hudBtn.style.borderColor = '#00ffc4';
+      showToast('HUD Target Released');
+    }
+  });
+
+
+  // --- 15. ART DECO SANDBOX ---
+  const decoBtn = document.getElementById('deco-btn-reserve');
+  decoBtn.addEventListener('click', () => {
+    showToast('⚜ Elegant Order: Table reserved at the Gatsby. Welcome to 1925.');
   });
 
 });

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UI Style Archive — Modern Web Design Reference & Codebook</title>
-  <meta name="description" content="An interactive codebook and design reference showcasing 10 major UI design trends with live CSS sandboxes, color codes, and AI prompts.">
+  <meta name="description" content="An interactive codebook and design reference showcasing 15 major UI design trends with live CSS sandboxes, color codes, and AI prompts.">
   
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,23 +34,28 @@
       
       <nav class="sidebar-nav">
         <ul class="nav-list">
-          <li><a href="#skeuomorphism" class="nav-item active" data-style="skeuomorphism"><span class="nav-num">01</span> Skeuomorphism</a></li>
-          <li><a href="#neomorphism" class="nav-item" data-style="neomorphism"><span class="nav-num">02</span> Neomorphism</a></li>
-          <li><a href="#glassmorphism" class="nav-item" data-style="glassmorphism"><span class="nav-num">03</span> Glassmorphism</a></li>
-          <li><a href="#claymorphism" class="nav-item" data-style="claymorphism"><span class="nav-num">04</span> Claymorphism</a></li>
-          <li><a href="#minimalism" class="nav-item" data-style="minimalism"><span class="nav-num">05</span> Minimalism</a></li>
-          <li><a href="#maximalism" class="nav-item" data-style="maximalism"><span class="nav-num">06</span> Maximalism</a></li>
-          <li><a href="#brutalism" class="nav-item" data-style="brutalism"><span class="nav-num">07</span> Brutalism</a></li>
-          <li><a href="#liquid-glass" class="nav-item" data-style="liquid-glass"><span class="nav-num">08</span> Liquid Glass</a></li>
-          <li><a href="#bento-grid" class="nav-item" data-style="bento-grid"><span class="nav-num">09</span> Bento Grid</a></li>
-          <li><a href="#spatial-ui" class="nav-item" data-style="spatial-ui"><span class="nav-num">10</span> Spatial UI</a></li>
+          <li><a href="#art-deco" class="nav-item active" data-style="art-deco"><span class="nav-num">01</span> Art Deco</a></li>
+          <li><a href="#skeuomorphism" class="nav-item" data-style="skeuomorphism"><span class="nav-num">02</span> Skeuomorphism</a></li>
+          <li><a href="#y2k-aero" class="nav-item" data-style="y2k-aero"><span class="nav-num">03</span> Y2K / Aero</a></li>
+          <li><a href="#neomorphism" class="nav-item" data-style="neomorphism"><span class="nav-num">04</span> Neomorphism</a></li>
+          <li><a href="#claymorphism" class="nav-item" data-style="claymorphism"><span class="nav-num">05</span> Claymorphism</a></li>
+          <li><a href="#minimalism" class="nav-item" data-style="minimalism"><span class="nav-num">06</span> Minimalism</a></li>
+          <li><a href="#bento-grid" class="nav-item" data-style="bento-grid"><span class="nav-num">07</span> Bento Grid</a></li>
+          <li><a href="#material-you" class="nav-item" data-style="material-you"><span class="nav-num">08</span> Material You</a></li>
+          <li><a href="#glassmorphism" class="nav-item" data-style="glassmorphism"><span class="nav-num">09</span> Glassmorphism</a></li>
+          <li><a href="#liquid-glass" class="nav-item" data-style="liquid-glass"><span class="nav-num">10</span> Liquid Glass</a></li>
+          <li><a href="#spatial-ui" class="nav-item" data-style="spatial-ui"><span class="nav-num">11</span> Spatial UI</a></li>
+          <li><a href="#brutalism" class="nav-item" data-style="brutalism"><span class="nav-num">12</span> Brutalism</a></li>
+          <li><a href="#maximalism" class="nav-item" data-style="maximalism"><span class="nav-num">13</span> Maximalism</a></li>
+          <li><a href="#cyberpunk-ui" class="nav-item" data-style="cyberpunk-ui"><span class="nav-num">14</span> Cyberpunk UI</a></li>
+          <li><a href="#scifi-hud" class="nav-item" data-style="scifi-hud"><span class="nav-num">15</span> Sci-Fi HUD</a></li>
         </ul>
       </nav>
 
       <div class="sidebar-footer">
         <div class="footer-card">
           <p>Need this in your project?</p>
-          <span class="footer-hint">Copy CSS modules directly from the code inspectors.</span>
+          <span class="footer-hint">Copy CSS recipes or Theme prompts to completely retheme your app.</span>
         </div>
       </div>
     </aside>
@@ -62,7 +67,7 @@
       <header class="app-header">
         <div class="header-intro">
           <h1>UI Design Style Reference Directory</h1>
-          <p>A high-fidelity developer resource showcasing UI styles with live rendered sandboxes, prompts, and adaptable CSS components.</p>
+          <p>A high-fidelity developer resource showcasing 15 UI styles arranged by their evolutionary timeline, with live rendered sandboxes and adaptable prompts.</p>
         </div>
         <div class="header-actions">
           <button id="theme-preview-toggle" class="btn btn-outline" title="Simulate different screen backdrops">
@@ -74,10 +79,141 @@
       <!-- Styles Content Grid -->
       <div class="styles-container">
 
-        <!-- 1. Skeuomorphism -->
-        <section id="skeuomorphism" class="style-section active-section">
+        <!-- 1. Art Deco -->
+        <section id="art-deco" class="style-section active-section">
           <div class="section-meta">
-            <span class="style-badge">01 · Realistic Tactility</span>
+            <span class="style-badge">01 · Gatsby Geometric Elegance</span>
+            <h2>Art Deco</h2>
+            <p class="section-desc">The high-luxury aesthetic of the Roaring Twenties. Characterized by intricate golden geometric lines, symmetry, jet-black marble slate backgrounds, and fine serif fonts.</p>
+          </div>
+
+          <!-- Interactive Sandbox -->
+          <div class="sandbox-container bg-deco-demo">
+            <div class="sandbox-label">Live Interactive Render</div>
+            
+            <div class="deco-card">
+              <div class="deco-border-inner"></div>
+              <div class="deco-corner-accent tl"></div>
+              <div class="deco-corner-accent tr"></div>
+              <div class="deco-corner-accent bl"></div>
+              <div class="deco-corner-accent br"></div>
+              
+              <div class="deco-header">
+                <span class="deco-crown">⚜</span>
+                <h3 class="deco-title">THE GATSBY</h3>
+              </div>
+              <div class="deco-body">
+                <p>ELEGANCE & GEOMETRIC SPLENDOR</p>
+                <span class="deco-divider"></span>
+                <p class="deco-subtitle">ESTABLISHED 1925</p>
+              </div>
+              <div class="deco-footer">
+                <button class="deco-btn" id="deco-btn-reserve">RESERVE TABLE</button>
+              </div>
+            </div>
+
+            <div class="sandbox-hints">
+              <span class="hint-tag">Hover card to see gold glows intensify</span>
+            </div>
+          </div>
+
+          <!-- Documentation, Swatches & Prompts -->
+          <div class="details-grid">
+            <div class="details-card">
+              <h3>Design Parameters & Tokens</h3>
+              <ul class="details-list">
+                <li><strong>Gold Detailing:</strong> Symmetrical vector borders (`border: 2px solid #d4af37` inside and out).</li>
+                <li><strong>Black Marble Base:</strong> Deep obsidian stone structures (`#0a0a0c`).</li>
+                <li><strong>Intricate Accents:</strong> Linear fans, chevron lines, and heraldic crowns (`⚜`).</li>
+                <li><strong>High-end Fonts:</strong> Tall, slender serif typefaces with wide letter-spacing.</li>
+              </ul>
+              
+              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
+              <div class="color-palette">
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #0A0A0C;" data-hex="#0A0A0C"></div>
+                  <span class="swatch-label">Black Marble</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #D4AF37;" data-hex="#D4AF37"></div>
+                  <span class="swatch-label">Art Deco Gold</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #AA7C11;" data-hex="#AA7C11"></div>
+                  <span class="swatch-label">Dark Brass</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #F3E5AB;" data-hex="#F3E5AB"></div>
+                  <span class="swatch-label">#F3E5AB</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-card">
+              <h3>AI Theme Transformation Recipe</h3>
+              <div class="prompt-box">
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Gatsby Art Deco
+- AESTHETICS & MOOD: Luxurious, symmetrical, geometric, ornate, elegant.
+- PALETTE:
+  - Base Background: Jet-black marble texture #0A0A0C
+  - Panel Background: Dark obsidian slate #121215
+  - Primary Text: Antique gold leaf #D4AF37
+  - Accent / Focus: Light gold-tint #F3E5AB
+- TYPOGRAPHY:
+  - Headings: Slender serif, bold, wide letter-spacing, uppercase
+  - Body Text: High-contrast gold sans-serif
+- CONTAINERS & CARDS:
+  - Borders: Multiple layered gold lines (outer 3px solid #D4AF37, inner 1px solid #D4AF37)
+  - Shadow: Radial gold halo glows (box-shadow: 0 0 15px rgba(212,175,55,0.15))
+  - Radii: 0px (strict rectangular frames)
+- HEADER & FOOTER:
+  - Height & Padding: Symmetrical grids with gold line work
+  - Borders: Interlaced gold chevron pattern dividers
+- INTERACTIVE ELEMENTS:
+  - Buttons: Gold-bordered panels, turns solid gold with black text on hover
+  - Form Inputs: Obsidian wells with gold trim lines
+  - Toggles & Sliders: Gold lever dials, symmetrical frames</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Inspector -->
+          <div class="code-inspector">
+            <div class="inspector-tabs">
+              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
+              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
+              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
+            </div>
+            <div class="inspector-content">
+              <pre class="tab-panel active" id="code-art-deco-css"><code>/* Art Deco Symmetrical Gold Recipe */
+.deco-card {
+  position: relative;
+  background: #0a0a0c;
+  border: 3px double #d4af37;
+  padding: 30px;
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  color: #d4af37;
+}
+.deco-border-inner {
+  position: absolute;
+  top: 6px; left: 6px; right: 6px; bottom: 6px;
+  border: 1px solid #d4af37;
+}</code></pre>
+              <pre class="tab-panel" id="code-art-deco-html"><code>&lt;div class="deco-card"&gt;
+  &lt;div class="deco-border-inner"&gt;&lt;/div&gt;
+  &lt;h3 class="deco-title"&gt;THE GATSBY&lt;/h3&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. Skeuomorphism -->
+        <section id="skeuomorphism" class="style-section">
+          <div class="section-meta">
+            <span class="style-badge">02 · Realistic Tactility</span>
             <h2>Skeuomorphism</h2>
             <p class="section-desc">Mimicking physical objects and real-world materials (leather, metal, glass, stitches, wood) through lighting, textures, bevels, and shadows. Highly intuitive, rich, and nostalgic.</p>
           </div>
@@ -86,11 +222,9 @@
           <div class="sandbox-container bg-skeuomorphic-demo">
             <div class="sandbox-label">Live Interactive Render</div>
             
-            <!-- Skeuomorphic Leather Pocket Card Holder -->
             <div class="skeu-wallet">
               <div class="skeu-back-stitch"></div>
               
-              <!-- Cards that can slide out -->
               <div class="skeu-card card-visa" id="skeu-card-visa">
                 <div class="skeu-card-chip"></div>
                 <div class="skeu-card-logo">✦ PREMIUM</div>
@@ -110,7 +244,6 @@
                 <div class="skeu-card-holder">ATA CORP</div>
               </div>
 
-              <!-- Leather Pocket Overlay -->
               <div class="skeu-pocket">
                 <div class="skeu-pocket-stitch"></div>
                 <div class="skeu-pocket-inner-shadow"></div>
@@ -123,7 +256,6 @@
               </div>
             </div>
 
-            <!-- Dial Control Panel next to it -->
             <div class="skeu-knob-panel">
               <div class="skeu-screw screw-tl"></div>
               <div class="skeu-screw screw-tr"></div>
@@ -184,10 +316,31 @@
             </div>
 
             <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
+              <h3>AI Theme Transformation Recipe</h3>
               <div class="prompt-box">
-                <p class="prompt-text">Skeuomorphic UI design, mobile digital wallet app, stitched dark forest green leather card holder pocket, credit cards with metallic gold leaf borders sticking out, physical volume metal knob panel, high realistic leather texture, realistic lighting, octane render, 8k, soft shadows --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Classic Skeuomorphism
+- AESTHETICS & MOOD: Physical, organic, textured, nostalgic, tactile.
+- PALETTE:
+  - Base Background: Wood/table mahogany #2C251E
+  - Panel Background: Dark forest green stitched leather #1E352F
+  - Primary Text: Tan cream #EBF4F1
+  - Accent / Focus: Polished brass gold #D4AF37
+- TYPOGRAPHY:
+  - Headings: Serif or bold condensed sans-serif, uppercase with deep text-shadows
+  - Body Text: Clean sans-serif
+- CONTAINERS & CARDS:
+  - Borders: 1px solid #33554C paired with dashed stitching overlays
+  - Shadow: Inset shadows simulating depth (inset 0 -4px 8px rgba(0,0,0,0.5)) + heavy soft drop shadow
+  - Radii: 24px
+- HEADER & FOOTER:
+  - Height & Padding: High margins, padded with metallic dividers
+  - Borders: Stitched borders and metallic gradients
+- INTERACTIVE ELEMENTS:
+  - Buttons: Metallic sweeps (conic gradients), 3D highlights (inset 0 1px 0 rgba(255,255,255,0.4))
+  - Form Inputs: Dark inset wells mimicking card pockets
+  - Toggles & Sliders: Rotary metal knobs, physical switches with ticks</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
               </div>
             </div>
           </div>
@@ -220,13 +373,6 @@
 .skeu-pocket-stitch {
   border-top: 2px dashed rgba(255,255,255,0.06);
   border-bottom: 2px dashed rgba(0,0,0,0.3);
-}
-.skeu-knob {
-  background: conic-gradient(from 0deg, #2a2a2a, #4a4a4a, #7a7a7a, #4a4a4a, #2a2a2a);
-  box-shadow: 
-    inset 0 2px 3px rgba(255,255,255,0.3),
-    0 10px 20px rgba(0,0,0,0.4),
-    0 0 0 4px #1a1a1a;
 }</code></pre>
               <pre class="tab-panel" id="code-skeuomorphism-html"><code>&lt;div class="skeu-wallet"&gt;
   &lt;div class="skeu-card"&gt;...&lt;/div&gt;
@@ -239,10 +385,138 @@
           </div>
         </section>
 
-        <!-- 2. Neomorphism -->
+        <!-- 3. Y2K / Frutiger Aero -->
+        <section id="y2k-aero" class="style-section">
+          <div class="section-meta">
+            <span class="style-badge">03 · Glossy Water Droplets</span>
+            <h2>Y2K / Frutiger Aero</h2>
+            <p class="section-desc">The optimistic design language of the 2000s. Characterized by high-gloss glass buttons, sky and grass color sweeps, water bubble highlights, and volumetric glossy spheres.</p>
+          </div>
+
+          <!-- Interactive Sandbox -->
+          <div class="sandbox-container bg-y2k-demo">
+            <div class="y2k-glossy-sphere"></div>
+            
+            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
+            
+            <div class="y2k-card">
+              <div class="y2k-glass-header">
+                <span class="y2k-icon">💧</span>
+                <h4>Aero Player</h4>
+              </div>
+              <div class="y2k-glass-body">
+                <div class="y2k-glow-display">
+                  <span class="title">Oceanic Vista.mp3</span>
+                  <div class="tracker-bar"><div class="tracker-fill" style="width: 60%;"></div></div>
+                </div>
+              </div>
+              <div class="y2k-glass-footer">
+                <button class="y2k-circular-btn" id="y2k-btn-play">▶</button>
+                <button class="y2k-circular-btn" id="y2k-btn-bubble">🫧</button>
+              </div>
+            </div>
+
+            <div class="sandbox-hints" style="z-index: 10;">
+              <span class="hint-tag">Click play or click bubble button to spawn droplets</span>
+            </div>
+          </div>
+
+          <!-- Documentation, Swatches & Prompts -->
+          <div class="details-grid">
+            <div class="details-card">
+              <h3>Design Parameters & Tokens</h3>
+              <ul class="details-list">
+                <li><strong>Gloss Gradients:</strong> Strong linear/radial overlays creating a 3D glass sweep highlight.</li>
+                <li><strong>Aero Elements:</strong> Water bubbles, green fields, sky blue backdrops, fish silhouettes.</li>
+                <li><strong>Highlight Sweeps:</strong> White-to-transparent gloss diagonals (`linear-gradient(135deg, rgba(255,255,255,0.4) 0%, transparent 50%)`).</li>
+                <li><strong>Refraction Shadows:</strong> Intensely bright inner borders paired with deep blurred outer shadows.</li>
+              </ul>
+              
+              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
+              <div class="color-palette">
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #00A6FF;" data-hex="#00A6FF"></div>
+                  <span class="swatch-label">Sky Blue</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #00E676;" data-hex="#00E676"></div>
+                  <span class="swatch-label">Eco Green</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: rgba(255,255,255,0.4);" data-hex="rgba(255,255,255,0.4)"></div>
+                  <span class="swatch-label">Gloss</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #102B3F;" data-hex="#102B3F"></div>
+                  <span class="swatch-label">#102B3F</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-card">
+              <h3>AI Theme Transformation Recipe</h3>
+              <div class="prompt-box">
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Y2K / Frutiger Aero
+- AESTHETICS & MOOD: Optimistic, glossy, liquid, biological, eco-tech.
+- PALETTE:
+  - Base Background: Sky blue gradient sweep #00A6FF to green #00E676
+  - Panel Background: High-gloss translucent glass rgba(255,255,255,0.2)
+  - Primary Text: Electric deep blue #102B3F
+  - Accent / Focus: Vivid lime green #00E676
+- TYPOGRAPHY:
+  - Headings: Rounded sans-serif, bold, soft drop shadows
+  - Body Text: Clean sans-serif, dark contrast
+- CONTAINERS & CARDS:
+  - Borders: 2px solid rgba(255,255,255,0.5) with white gloss sweeps
+  - Shadow: Inset white glow highlights (inset 0 4px 8px #ffffff) + soft outer blur
+  - Radii: 20px (elliptical curves)
+- HEADER & FOOTER:
+  - Height & Padding: Padded gloss compartments
+  - Borders: Liquid glassy separators
+- INTERACTIVE ELEMENTS:
+  - Buttons: Volumetric circular buttons with 3D gloss reflections, gel-like clicks
+  - Form Inputs: White transparent wells with high-gloss border highlights
+  - Toggles & Sliders: Water-bubble slider heads, glowing aqua tracks</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Inspector -->
+          <div class="code-inspector">
+            <div class="inspector-tabs">
+              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
+              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
+              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
+            </div>
+            <div class="inspector-content">
+              <pre class="tab-panel active" id="code-y2k-aero-css"><code>/* Y2K Frutiger Aero Gloss */
+.y2k-card {
+  background: linear-gradient(135deg, rgba(255,255,255,0.3), rgba(255,255,255,0.08));
+  border: 2px solid rgba(255,255,255,0.5);
+  box-shadow: 
+    inset 0 8px 12px rgba(255,255,255,0.4),
+    0 10px 25px rgba(0, 166, 255, 0.2);
+  border-radius: 20px;
+}
+.y2k-circular-btn {
+  background: radial-gradient(circle at 35% 35%, #ffffff 0%, #00a6ff 100%);
+  border: 1px solid rgba(255,255,255,0.8);
+  box-shadow: inset 0 2px 2px #fff, 0 4px 6px rgba(0,0,0,0.25);
+}</code></pre>
+              <pre class="tab-panel" id="code-y2k-aero-html"><code>&lt;div class="y2k-card"&gt;
+  &lt;div class="y2k-glass-header"&gt;Aero Player&lt;/div&gt;
+  &lt;button class="y2k-circular-btn"&gt;▶&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4. Neomorphism -->
         <section id="neomorphism" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">02 · Soft Extrusion</span>
+            <span class="style-badge">04 · Soft Extrusion</span>
             <h2>Neomorphism</h2>
             <p class="section-desc">A soft, semi-realistic UI style where buttons and panels appear to be extruded from the background. Relies on dual-diagonal light and dark box-shadows matching the exact background tone.</p>
           </div>
@@ -259,7 +533,6 @@
                   <div class="neo-icon-btn btn-settings"><span>⚙</span></div>
                 </div>
                 
-                <!-- Circular Neo Dial -->
                 <div class="neo-dial-section">
                   <div class="neo-dial-outer">
                     <div class="neo-dial" id="neo-volume-dial">
@@ -269,7 +542,6 @@
                   <div class="neo-status-text">DECK VOLUME: <span id="neo-volume-val">60%</span></div>
                 </div>
                 
-                <!-- Neo Toggle Controls -->
                 <div class="neo-toggle-grid">
                   <button class="neo-btn-action" id="neo-btn-power">
                     <span class="power-glow"></span>
@@ -280,7 +552,6 @@
                   </button>
                 </div>
 
-                <!-- Slider -->
                 <div class="neo-slider-wrapper">
                   <div class="neo-slider-labels">
                     <span>BASS BOOST</span>
@@ -333,10 +604,31 @@
             </div>
 
             <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
+              <h3>AI Theme Transformation Recipe</h3>
               <div class="prompt-box">
-                <p class="prompt-text">Neumorphic dashboard UI design, light grey soft plastic, extrusion shadows, rounded dial volume knob, button toggles with active red glowing led indicator light, clean, minimalist, high fidelity, 3D render feel, soft lighting, pastel ambient shadow --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Neomorphism
+- AESTHETICS & MOOD: Soft, extruded, plastic, uniform, 3D relief.
+- PALETTE:
+  - Base Background: Pure soft gray-blue #E0E5EC
+  - Panel Background: Identical to base background #E0E5EC
+  - Primary Text: Charcoal gray-blue #4A5668
+  - Accent / Focus: Glowing red #FF5252 or soft indigo
+- TYPOGRAPHY:
+  - Headings: Clean sans-serif, medium weight
+  - Body Text: Clean sans-serif, high-contrast readability
+- CONTAINERS & CARDS:
+  - Borders: None (rely strictly on shadows)
+  - Shadow: Diagonal extrusions. Top-left shadow #FFFFFF, bottom-right shadow #A3B1C6
+  - Radii: 28px - 32px
+- HEADER & FOOTER:
+  - Height & Padding: Spacious margins
+  - Borders: No borders; separate using neomorphic ridges
+- INTERACTIVE ELEMENTS:
+  - Buttons: Outer shadow box default, morphs to inset shadows when active/pressed
+  - Form Inputs: Permanent inset shadows (inset 3px 3px 6px #A3B1C6, inset -3px -3px 6px #FFFFFF)
+  - Toggles & Sliders: Extruded round buttons, track is inset, knob is extruded</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
               </div>
             </div>
           </div>
@@ -349,185 +641,26 @@
               <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
             </div>
             <div class="inspector-content">
-              <pre class="tab-panel active" id="code-neomorphism-css"><code>/* Neumorphic Color & Shadow Tokens */
-:root {
-  --neo-bg: #e0e5ec;
-  --neo-light-shadow: -9px -9px 16px #ffffff;
-  --neo-dark-shadow: 9px 9px 16px #a3b1c6;
-  --neo-inset-light: inset -9px -9px 16px #ffffff;
-  --neo-inset-dark: inset 9px 9px 16px #a3b1c6;
-}
-
+              <pre class="tab-panel active" id="code-neomorphism-css"><code>/* Neumorphic Shadow Recipe */
 .neo-card {
-  background: var(--neo-bg);
-  border-radius: 30px;
-  box-shadow: var(--neo-dark-shadow), var(--neo-light-shadow);
+  background: #e0e5ec;
+  box-shadow: 9px 9px 18px #a3b1c6, -9px -9px 18px #ffffff;
+  border-radius: 28px;
 }
-
-.neo-btn-action {
-  background: var(--neo-bg);
-  box-shadow: var(--neo-dark-shadow), var(--neo-light-shadow);
-  border-radius: 12px;
-  transition: all 0.2s ease;
-}
-
-.neo-btn-action:active,
 .neo-btn-action.active {
-  box-shadow: var(--neo-inset-dark), var(--neo-inset-light);
+  box-shadow: inset 3px 3px 6px #a3b1c6, inset -3px -3px 6px #ffffff;
 }</code></pre>
               <pre class="tab-panel" id="code-neomorphism-html"><code>&lt;div class="neo-card"&gt;
-  &lt;button class="neo-btn-action"&gt;
-    &lt;span&gt;⚡&lt;/span&gt; Power
-  &lt;/button&gt;
+  &lt;button class="neo-btn-action"&gt;⚡ POWER&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>
 
-        <!-- 3. Glassmorphism -->
-        <section id="glassmorphism" class="style-section">
-          <div class="section-meta">
-            <span class="style-badge">03 · Translucent Frosted Glass</span>
-            <h2>Glassmorphism</h2>
-            <p class="section-desc">Characterized by background blur effects, semi-transparent frosted card styles, borders mimicking glass refractions, and vibrant abstract background shapes that reveal depth.</p>
-          </div>
-
-          <!-- Interactive Sandbox -->
-          <div class="sandbox-container bg-glassmorphic-demo">
-            
-            <!-- Drifting colorful blobs behind glass -->
-            <div class="glass-orb blob-1"></div>
-            <div class="glass-orb blob-2"></div>
-            <div class="glass-orb blob-3"></div>
-
-            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
-            
-            <!-- Frosted Glass Card -->
-            <div class="glass-card">
-              <div class="glass-chip-row">
-                <span class="glass-logo">✦ INFINITE</span>
-                <span class="glass-card-type">WORLD ACCESS</span>
-              </div>
-              
-              <div class="glass-card-body">
-                <div class="glass-balance-label">AVAILABLE LIMIT</div>
-                <div class="glass-balance-amount">$84,320.00</div>
-              </div>
-              
-              <div class="glass-card-footer">
-                <div class="glass-holder">CHANDLER BING</div>
-                <div class="glass-expires">EXP 12/29</div>
-              </div>
-
-              <!-- Interactive button inside glass -->
-              <button class="glass-btn">
-                <span>View Transactions</span>
-                <span class="arrow">→</span>
-              </button>
-            </div>
-
-            <!-- Mini stats overlay -->
-            <div class="glass-stats-panel">
-              <div class="stat-item">
-                <span class="stat-dot green"></span>
-                <span class="stat-title">Staking APY</span>
-                <span class="stat-value">12.4%</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-dot blue"></span>
-                <span class="stat-title">Active Pools</span>
-                <span class="stat-value">18</span>
-              </div>
-            </div>
-
-            <div class="sandbox-hints" style="z-index: 10;">
-              <span class="hint-tag">Hover card to see dynamic lighting shifts</span>
-            </div>
-          </div>
-
-          <!-- Documentation, Swatches & Prompts -->
-          <div class="details-grid">
-            <div class="details-card">
-              <h3>Design Parameters & Tokens</h3>
-              <ul class="details-list">
-                <li><strong>Backdrop Blur:</strong> Uses `backdrop-filter: blur(15px-30px)` to diffuse background colors.</li>
-                <li><strong>Translucent Fills:</strong> Card fill is extremely light white e.g., `rgba(255, 255, 255, 0.07)`.</li>
-                <li><strong>Highlight Borders:</strong> A thin semi-transparent border mimics sharp glass light cuts.</li>
-                <li><strong>Vibrancy:</strong> Deep colorful shapes behind the glass give contrast.</li>
-              </ul>
-              
-              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
-              <div class="color-palette">
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: rgba(255, 255, 255, 0.08);" data-hex="rgba(255,255,255,0.08)"></div>
-                  <span class="swatch-label">White 8%</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #FF2E93;" data-hex="#FF2E93"></div>
-                  <span class="swatch-label">#FF2E93</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #05C1FF;" data-hex="#05C1FF"></div>
-                  <span class="swatch-label">#05C1FF</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #FFB703;" data-hex="#FFB703"></div>
-                  <span class="swatch-label">#FFB703</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
-              <div class="prompt-box">
-                <p class="prompt-text">Glassmorphism UI dashboard card layout, glowing neon pink and cyan blur gradient blobs in the background, frosted glass card floating with smooth transparent texture, thin glowing glass borders, crystal clear typography, sleek financial credit card mockup, clean lighting --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Code Inspector -->
-          <div class="code-inspector">
-            <div class="inspector-tabs">
-              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
-              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
-              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
-            </div>
-            <div class="inspector-content">
-              <pre class="tab-panel active" id="code-glassmorphism-css"><code>/* Glassmorphism CSS Recipe */
-.glass-card {
-  background: rgba(255, 255, 255, 0.07);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  box-shadow: 
-    0 8px 32px 0 rgba(0, 0, 0, 0.3),
-    inset 0 1px 0 rgba(255,255,255,0.15);
-  border-radius: 24px;
-}
-.glass-btn {
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(8px);
-  color: #ffffff;
-  transition: background 0.3s ease;
-}
-.glass-btn:hover {
-  background: rgba(255, 255, 255, 0.2);
-}</code></pre>
-              <pre class="tab-panel" id="code-glassmorphism-html"><code>&lt;div class="glass-card"&gt;
-  &lt;h3&gt;Available Balance&lt;/h3&gt;
-  &lt;p&gt;$84,320.00&lt;/p&gt;
-  &lt;button class="glass-btn"&gt;View Details&lt;/button&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-          </div>
-        </section>
-
-        <!-- 4. Claymorphism -->
+        <!-- 5. Claymorphism -->
         <section id="claymorphism" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">04 · Fluffy 3D Clay</span>
+            <span class="style-badge">05 · Fluffy 3D Clay</span>
             <h2>Claymorphism</h2>
             <p class="section-desc">Creates a soft, inflated clay-like 3D feel using rounded/oval shapes, pastel colors, soft outer drop-shadows, and heavy layered internal shadows (light on top, dark on bottom).</p>
           </div>
@@ -537,7 +670,6 @@
             <div class="sandbox-label">Live Interactive Render</div>
             
             <div class="clay-card">
-              <!-- Clay Avatar -->
               <div class="clay-avatar-container">
                 <div class="clay-avatar">
                   <div class="clay-avatar-face">
@@ -555,7 +687,6 @@
                 <p>Hello! I am a soft 3D-style responsive component.</p>
               </div>
 
-              <!-- Interactive clay toggles -->
               <div class="clay-toggles">
                 <div class="clay-toggle-group">
                   <span class="toggle-lbl">MUTE</span>
@@ -614,10 +745,31 @@
             </div>
 
             <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
+              <h3>AI Theme Transformation Recipe</h3>
               <div class="prompt-box">
-                <p class="prompt-text">Claymorphism UI layout, cute pastel pink and blue 3D toy character avatar, rounded soft clay button and card switches, high-end clay render, matte plastic material, blender render, soft shadows, isometric angle, colorful pastel scene --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Claymorphism
+- AESTHETICS & MOOD: Toy-like, 3D-inflated, fluffy, friendly, matte plastic.
+- PALETTE:
+  - Base Background: Soft sky pastel blue #E0F2FE
+  - Panel Background: Matte white clay #FCFDFE
+  - Primary Text: Slate blue #4A5D6E
+  - Accent / Focus: Pastel pink #FFB5D0
+- TYPOGRAPHY:
+  - Headings: Rounded, heavy weight, cheerful sans-serif
+  - Body Text: Clean sans-serif
+- CONTAINERS & CARDS:
+  - Borders: 4px solid #FFFFFF
+  - Shadow: Volumetric inner highlights (inset 8px 8px 16px #ffffff) + inner shadows (inset -8px -8px 16px rgba(163,216,244,0.4)) + long soft drop shadow
+  - Radii: 32px
+- HEADER & FOOTER:
+  - Height & Padding: Generous cushion margins
+  - Borders: Thick white separators
+- INTERACTIVE ELEMENTS:
+  - Buttons: Fluffy pastel backgrounds, scales on hover, inset shadows on active press
+  - Form Inputs: White borders, deep soft inner shadows
+  - Toggles & Sliders: Rounded pill-shaped track, spherical clay knob thumb</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
               </div>
             </div>
           </div>
@@ -630,49 +782,28 @@
               <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
             </div>
             <div class="inspector-content">
-              <pre class="tab-panel active" id="code-claymorphism-css"><code>/* Claymorphism CSS Recipe */
+              <pre class="tab-panel active" id="code-claymorphism-css"><code>/* Claymorphism Styling */
 .clay-card {
   background: #fcfdfe;
-  border-radius: 36px;
+  border-radius: 32px;
   border: 4px solid #ffffff;
-  /* Outer soft shadow + inner highlight + inner depth shadow */
   box-shadow: 
     0 20px 40px rgba(163, 216, 244, 0.35),
     inset 8px 8px 16px #ffffff,
-    inset -8px -8px 16px rgba(163, 216, 244, 0.5);
-}
-
-.clay-btn {
-  background: #ffb5d0;
-  border: 3px solid #ffffff;
-  border-radius: 20px;
-  box-shadow: 
-    0 10px 20px rgba(255, 181, 208, 0.4),
-    inset 4px 4px 8px #ffffff,
-    inset -4px -4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.1s ease;
-}
-
-.clay-btn:active {
-  transform: scale(0.95);
-  box-shadow: 
-    0 5px 10px rgba(255, 181, 208, 0.4),
-    inset 2px 2px 4px #ffffff,
-    inset -2px -2px 4px rgba(0, 0, 0, 0.15);
+    inset -8px -8px 16px rgba(163, 216, 244, 0.4);
 }</code></pre>
               <pre class="tab-panel" id="code-claymorphism-html"><code>&lt;div class="clay-card"&gt;
   &lt;div class="clay-avatar"&gt;&lt;/div&gt;
-  &lt;h3&gt;Clay Card&lt;/h3&gt;
-  &lt;button class="clay-btn"&gt;Hug Me&lt;/button&gt;
+  &lt;button class="clay-btn"&gt;HUG ME&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>
 
-        <!-- 5. Minimalism -->
+        <!-- 6. Minimalism -->
         <section id="minimalism" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">05 · Pure Layout</span>
+            <span class="style-badge">06 · Pure Layout</span>
             <h2>Minimalism</h2>
             <p class="section-desc">Focuses on content, grid consistency, high letter-spacing contrasts, and absolute lack of decorative shadow structures or gradient noise. Uses typography and borders to separate elements.</p>
           </div>
@@ -746,10 +877,31 @@
             </div>
 
             <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
+              <h3>AI Theme Transformation Recipe</h3>
               <div class="prompt-box">
-                <p class="prompt-text">Minimalist Swiss UI website design, editorial layout, black and white stark color palette, heavy typographic contrast, sans-serif font, zero shadows, extreme negative space, clean borders, high-end architecture vibe --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Swiss Minimalism
+- AESTHETICS & MOOD: Structured, raw, clean, stark, editorial, high-contrast.
+- PALETTE:
+  - Base Background: Chalk white #FFFFFF
+  - Panel Background: Stark white #FFFFFF or light gray #F5F5F5
+  - Primary Text: Deep black #111111
+  - Accent / Focus: Neutral dark gray #767676
+- TYPOGRAPHY:
+  - Headings: Symmetrical sans-serif (e.g. Outfit), bold uppercase, wide tracking
+  - Body Text: Elegant serif (e.g. Playfair Display) or geometric sans-serif
+- CONTAINERS & CARDS:
+  - Borders: Flat solid 1px solid #111111
+  - Shadow: None (0px shadows)
+  - Radii: 0px (absolute square corners)
+- HEADER & FOOTER:
+  - Height & Padding: Wide negative space gutters, thin rule borders
+  - Borders: 1px solid #111111 divider
+- INTERACTIVE ELEMENTS:
+  - Buttons: Flat black fill with white text, zero border-radius, instant hover colors
+  - Form Inputs: Thin line borders, zero glows
+  - Toggles & Sliders: Thin box toggles</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
               </div>
             </div>
           </div>
@@ -762,83 +914,91 @@
               <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
             </div>
             <div class="inspector-content">
-              <pre class="tab-panel active" id="code-minimalism-css"><code>/* Minimalist Grid and Style Recipe */
+              <pre class="tab-panel active" id="code-minimalism-css"><code>/* Minimalist Recipe */
 .min-article {
   background: #ffffff;
   color: #111111;
-  font-family: 'Playfair Display', serif;
-  padding: 40px;
   border: 1px solid #111111;
-  text-align: left;
+  font-family: 'Playfair Display', serif;
+  padding: 30px;
 }
-
 .min-title {
   font-family: 'Outfit', sans-serif;
   font-weight: 800;
-  font-size: 2.2rem;
-  letter-spacing: -0.04em;
   text-transform: uppercase;
-  margin: 16px 0;
   border-bottom: 2px solid #111111;
-  padding-bottom: 12px;
-}
-
-.min-btn {
-  background: #111111;
-  color: #ffffff;
-  border: none;
-  font-family: 'Outfit', sans-serif;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  padding: 12px 24px;
-  transition: background 0.15s ease;
-}
-
-.min-btn:hover {
-  background: #555555;
 }</code></pre>
               <pre class="tab-panel" id="code-minimalism-html"><code>&lt;div class="min-article"&gt;
-  &lt;h3 class="min-title"&gt;Typography & Grid&lt;/h3&gt;
-  &lt;p&gt;Discard decoration, preserve space.&lt;/p&gt;
-  &lt;button class="min-btn"&gt;EXPLORE&lt;/button&gt;
+  &lt;h3 class="min-title"&gt;ESSENCE&lt;/h3&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>
 
-        <!-- 6. Maximalism -->
-        <section id="maximalism" class="style-section">
+        <!-- 7. Bento Grid -->
+        <section id="bento-grid" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">06 · Controlled Chaos</span>
-            <h2>Maximalism</h2>
-            <p class="section-desc">Celebrating visual clutter, heavy patterns, clashing colors, glowing gradients, rotating grids, and retro sticker collages. It pushes boundaries, creating highly memorable impact.</p>
+            <span class="style-badge">07 · Modular Layout</span>
+            <h2>Bento Grid</h2>
+            <p class="section-desc">Inspired by Japanese Bento boxes, this style partitions screen space into varying-sized rectangular modules with distinct rounded corners, grouping widgets elegantly to maximize visual hierarchy.</p>
           </div>
 
           <!-- Interactive Sandbox -->
-          <div class="sandbox-container bg-maximalist-demo">
+          <div class="sandbox-container bg-bento-demo">
             <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="max-collage">
-              <div class="max-badge-rotate">LIMITLESS</div>
-              
-              <div class="max-box-gradient">
-                <h3>CREATIVE OVERFLOW!</h3>
+            <div class="bento-grid-wrapper">
+              <div class="bento-item item-profile">
+                <div class="bento-profile-avatar">✦</div>
+                <div class="bento-profile-info">
+                  <h4>Chandler Bing</h4>
+                  <p>Lead Interface Engineer</p>
+                </div>
+                <div class="bento-status-pill">Active</div>
               </div>
-              
-              <div class="max-sticker-1">★ 99% RAW</div>
-              <div class="max-sticker-2">CLICK IT!</div>
-              
-              <p class="max-paragraph">Break standard grid limits. Overlapping text, diagonal badges, saturated neon fills, and aggressive patterns combined together.</p>
 
-              <div class="max-footer-btn-row">
-                <button class="max-btn max-btn-pink">DISCOVER</button>
-                <button class="max-btn max-btn-green">JOIN CLUB</button>
+              <div class="bento-item item-stat">
+                <div class="bento-stat-val">76%</div>
+                <div class="bento-stat-lbl">System Perf</div>
+                <div class="bento-stat-bar-outer"><div class="bento-stat-bar-inner" style="width: 76%;"></div></div>
+              </div>
+
+              <div class="bento-item item-switch">
+                <div class="bento-switch-row">
+                  <span>Server Status</span>
+                  <div class="bento-switch" id="bento-switch-server"><div class="thumb"></div></div>
+                </div>
+                <div class="bento-switch-row">
+                  <span>Cache Sync</span>
+                  <div class="bento-switch active" id="bento-switch-cache"><div class="thumb"></div></div>
+                </div>
+              </div>
+
+              <div class="bento-item item-wide">
+                <div class="wide-header">
+                  <span>📅 DAILY AGENDA</span>
+                  <span>JULY 1</span>
+                </div>
+                <ul class="wide-agenda-list">
+                  <li class="done">Sync with ATA designers <span class="time">10:00 AM</span></li>
+                  <li>Build Claymorphic components <span class="time">12:30 PM</span></li>
+                  <li>Perform spatial transforms <span class="time">03:00 PM</span></li>
+                </ul>
+              </div>
+
+              <div class="bento-item item-small item-pink">
+                <span class="bento-sub-icon">💡</span>
+                <span class="bento-sub-lbl">Core Design</span>
+              </div>
+
+              <div class="bento-item item-small item-cyan">
+                <span class="bento-sub-icon">🚀</span>
+                <span class="bento-sub-lbl">Export CSS</span>
               </div>
             </div>
 
             <div class="sandbox-hints">
-              <span class="hint-tag">Hover components to trigger scale & rotation animations</span>
+              <span class="hint-tag">Tap toggles or hover cells to trigger grid scaling responses</span>
             </div>
           </div>
 
@@ -847,38 +1007,62 @@
             <div class="details-card">
               <h3>Design Parameters & Tokens</h3>
               <ul class="details-list">
-                <li><strong>Overlapping Layers:</strong> Uses absolute positioning and varying `z-index`.</li>
-                <li><strong>Rotations:</strong> Small rotate transforms (`rotate(-3deg)`, `rotate(5deg)`) add chaos.</li>
-                <li><strong>Patterns:</strong> Repeating linear-gradients (stripes, checkboards) as card/text frames.</li>
-                <li><strong>Clashing Colors:</strong> Combining extremely high-saturation opposites on the color wheel.</li>
+                <li><strong>Grid Setup:</strong> Typically a CSS Grid layout with custom `grid-template-columns` and `gap`.</li>
+                <li><strong>Card Radii:</strong> Consistent, pronounced rounded corners (usually `16px` to `24px`).</li>
+                <li><strong>Spacing:</strong> Uniform gap distance (often `12px`, `16px`, or `24px`).</li>
+                <li><strong>Card Styling:</strong> Modular widgets should share background and hover styling to stay unified.</li>
               </ul>
               
               <h4 class="mt-1">Color Palette (Click to Copy)</h4>
               <div class="color-palette">
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #FF007F;" data-hex="#FF007F"></div>
-                  <span class="swatch-label">#FF007F</span>
+                  <div class="color-swatch" style="background-color: #18181B;" data-hex="#18181B"></div>
+                  <span class="swatch-label">#18181B</span>
                 </div>
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #CCFF00;" data-hex="#CCFF00"></div>
-                  <span class="swatch-label">#CCFF00</span>
+                  <div class="color-swatch" style="background-color: #27272A;" data-hex="#27272A"></div>
+                  <span class="swatch-label">#27272A</span>
                 </div>
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #7A00FF;" data-hex="#7A00FF"></div>
-                  <span class="swatch-label">#7A00FF</span>
+                  <div class="color-swatch" style="background-color: #3F3F46;" data-hex="#3F3F46"></div>
+                  <span class="swatch-label">#3F3F46</span>
                 </div>
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #00E5FF;" data-hex="#00E5FF"></div>
-                  <span class="swatch-label">#00E5FF</span>
+                  <div class="color-swatch" style="background-color: #A1A1AA;" data-hex="#A1A1AA"></div>
+                  <span class="swatch-label">#A1A1AA</span>
                 </div>
               </div>
             </div>
 
             <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
+              <h3>AI Theme Transformation Recipe</h3>
               <div class="prompt-box">
-                <p class="prompt-text">Maximalist web UI interface, vibrant neon pink and yellow warning stripes, collage aesthetic, acid green sticker details, massive font scaling, layered overlapping windows, cyberpop style, high contrast visual noise --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Bento Grid
+- AESTHETICS & MOOD: Modular, structural, clean, grouped, high-hierarchy.
+- PALETTE:
+  - Base Background: Deep charcoal grid slate #0C0C0E
+  - Panel Background: Graphite panels #18181B
+  - Primary Text: Soft white #F4F4F5
+  - Accent / Focus: Slate border gray #27272A
+- TYPOGRAPHY:
+  - Headings: Clean sans-serif, bold, varying scale
+  - Body Text: Clean sans-serif, legible sizing
+- CONTAINERS & CARDS:
+  - Borders: 1px solid #27272A (card borders)
+  - Shadow: Micro-shadows (0 4px 6px rgba(0,0,0,0.1))
+  - Radii: Uniform 18px to 22px
+- HEADER & FOOTER:
+  - Height & Padding: Spaced gutters, aligned strictly to outer grid columns
+  - Borders: Rule lines matching card borders
+- INTERACTIVE ELEMENTS:
+  - Buttons: Flat buttons contained inside card compartments
+  - Form Inputs: Rounded containers inside cells
+  - Toggles & Sliders: Minimal toggles inside compact cells
+- SPECIFIC GRAPHIC EFFECTS:
+  - CSS display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;
+  - Micro-interactions (slight scale) when hovering individual items</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
               </div>
             </div>
           </div>
@@ -891,91 +1075,72 @@
               <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
             </div>
             <div class="inspector-content">
-              <pre class="tab-panel active" id="code-maximalism-css"><code>/* Maximalist Clash Styles */
-.max-collage {
-  position: relative;
-  background-image: repeating-linear-gradient(
-    45deg,
-    #ccff00,
-    #ccff00 10px,
-    #111111 10px,
-    #111111 20px
-  );
-  padding: 30px;
-  border: 5px double #ff007f;
+              <pre class="tab-panel active" id="code-bento-grid-css"><code>/* Bento Grid Layout Recipe */
+.bento-grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  gap: 12px;
 }
-
-.max-badge-rotate {
-  position: absolute;
-  top: -15px;
-  left: 10px;
-  background: #7a00ff;
-  color: #ccff00;
-  font-family: 'Bungee', cursive;
-  padding: 8px 16px;
-  transform: rotate(-6deg);
-  box-shadow: 4px 4px 0px #00e5ff;
+.bento-item {
+  background: #18181b;
+  border: 1px solid #27272a;
+  border-radius: 18px;
+  padding: 14px;
 }
-
-.max-btn-pink {
-  background: #ff007f;
-  color: #ffffff;
-  font-family: 'Bungee', cursive;
-  border: 3px outset #ccff00;
-  padding: 10px 20px;
-  transform: rotate(2deg);
-}
-.max-btn-pink:hover {
-  transform: scale(1.1) rotate(-2deg);
-  background: #ccff00;
-  color: #ff007f;
+.bento-item:hover {
+  transform: scale(1.02);
 }</code></pre>
-              <pre class="tab-panel" id="code-maximalism-html"><code>&lt;div class="max-collage"&gt;
-  &lt;div class="max-badge-rotate"&gt;LIMITLESS&lt;/div&gt;
-  &lt;button class="max-btn max-btn-pink"&gt;DISCOVER&lt;/button&gt;
+              <pre class="tab-panel" id="code-bento-grid-html"><code>&lt;div class="bento-grid-wrapper"&gt;
+  &lt;div class="bento-item item-profile"&gt;Avatar&lt;/div&gt;
+  &lt;div class="bento-item"&gt;Stats&lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>
 
-        <!-- 7. Brutalism -->
-        <section id="brutalism" class="style-section">
+        <!-- 8. Material You -->
+        <section id="material-you" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">07 · Raw Neo-Brutalist Outlines</span>
-            <h2>Brutalism</h2>
-            <p class="section-desc">Neo-brutalism features raw, unpolished HTML shapes, thick black solid borders, bright high-saturation background fills, monospaced typography, and hard offset drop shadows that do not blur.</p>
+            <span class="style-badge">08 · Monet Tonal Surfaces</span>
+            <h2>Material You</h2>
+            <p class="section-desc">Inspired by Android's modern visual language. Features dynamic color-extraction tone mapping, organic pill buttons, flat card layouts, and subtle, soft surface elevations.</p>
           </div>
 
           <!-- Interactive Sandbox -->
-          <div class="sandbox-container bg-brutalist-demo">
+          <div class="sandbox-container bg-material-demo">
             <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="brut-card">
-              <div class="brut-header">
-                <span class="brut-tag">HTML5 SNIPPET</span>
-                <span class="brut-badge">HOT 🔥</span>
+            <div class="material-card">
+              <div class="material-header">
+                <h3>Inbox</h3>
+                <span class="material-avatar">A</span>
               </div>
               
-              <h3 class="brut-title">RAW COMPONENT CODE</h3>
-              
-              <p class="brut-desc">We reject gradient blurs and glass effects. Here, shadows are solid black rectangles offset at precise angles. Fonts are raw mono.</p>
-              
-              <!-- Form input inside neo-brutalism -->
-              <div class="brut-input-row">
-                <input type="text" class="brut-input" placeholder="enter email address">
-                <button class="brut-btn btn-accent" id="brut-btn-submit">SUBMIT</button>
+              <div class="material-list">
+                <div class="material-list-item active">
+                  <div class="item-icon">📬</div>
+                  <div class="item-text">
+                    <h4>Dynamic Theme</h4>
+                    <p>Monet color harmony matches wallpaper...</p>
+                  </div>
+                </div>
+                
+                <div class="material-list-item">
+                  <div class="item-icon">🎨</div>
+                  <div class="item-text">
+                    <h4>Material Design 3</h4>
+                    <p>Clean tonal surfaces and adaptive shapes...</p>
+                  </div>
+                </div>
               </div>
-
-              <!-- Extra tags -->
-              <div class="brut-pill-row">
-                <span class="brut-pill select-cyan">#webdev</span>
-                <span class="brut-pill select-purple">#brutalism</span>
-                <span class="brut-pill select-orange">#css</span>
-              </div>
+              
+              <button class="material-fab" id="material-fab-compose">
+                <span>✏️</span>
+              </button>
             </div>
 
             <div class="sandbox-hints">
-              <span class="hint-tag">Interactive input and click active solid state</span>
+              <span class="hint-tag">Tap list item or hover FAB pill</span>
             </div>
           </div>
 
@@ -984,38 +1149,59 @@
             <div class="details-card">
               <h3>Design Parameters & Tokens</h3>
               <ul class="details-list">
-                <li><strong>Outlines:</strong> Symmetrical thick black borders (usually `3px` or `4px` solid `#000000`).</li>
-                <li><strong>Shadows:</strong> Hard offset shadows without blur: `box-shadow: 8px 8px 0px #000`.</li>
-                <li><strong>Saturated Fills:</strong> Pure primaries (yellow, blue, orange, mint green).</li>
-                <li><strong>Hover State:</strong> Cards slide onto their shadow: `transform: translate(4px, 4px); box-shadow: 4px 4px 0px #000;`.</li>
+                <li><strong>Dynamic Tones:</strong> Uses harmonious color groups (primary, secondary, surface variants).</li>
+                <li><strong>Rounded Corners:</strong> Generous, smooth border-radii (`16px` to `28px`).</li>
+                <li><strong>Interactive Shapes:</strong> Pill buttons (`100px`) and circular icons are key styling cues.</li>
+                <li><strong>Elevation:</strong> Soft, low-contrast shadows mimicking cardboard sheets.</li>
               </ul>
               
               <h4 class="mt-1">Color Palette (Click to Copy)</h4>
               <div class="color-palette">
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #FFDE47; border: 2px solid #000;" data-hex="#FFDE47"></div>
-                  <span class="swatch-label">#FFDE47</span>
+                  <div class="color-swatch" style="background-color: #EADDFF;" data-hex="#EADDFF"></div>
+                  <span class="swatch-label">Primary</span>
                 </div>
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #54E346; border: 2px solid #000;" data-hex="#54E346"></div>
-                  <span class="swatch-label">#54E346</span>
+                  <div class="color-swatch" style="background-color: #21005D;" data-hex="#21005D"></div>
+                  <span class="swatch-label">On-Primary</span>
                 </div>
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #FF7B54; border: 2px solid #000;" data-hex="#FF7B54"></div>
-                  <span class="swatch-label">#FF7B54</span>
+                  <div class="color-swatch" style="background-color: #F3EDF7;" data-hex="#F3EDF7"></div>
+                  <span class="swatch-label">Surface</span>
                 </div>
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #00D2C4; border: 2px solid #000;" data-hex="#00D2C4"></div>
-                  <span class="swatch-label">#00D2C4</span>
+                  <div class="color-swatch" style="background-color: #E8DEF8;" data-hex="#E8DEF8"></div>
+                  <span class="swatch-label">Secondary</span>
                 </div>
               </div>
             </div>
 
             <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
+              <h3>AI Theme Transformation Recipe</h3>
               <div class="prompt-box">
-                <p class="prompt-text">Neo-brutalist website UI layout, solid thick black outlines, stark bright yellow background card, heavy black offset drop shadows, monospaced text, raw html buttons, high contrast, flat style --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Material You (MD3)
+- AESTHETICS & MOOD: Organic, cohesive, tonal, clean, flat, accessible.
+- PALETTE:
+  - Base Background: Light pastel lavender surface #F3EDF7
+  - Panel Background: Card container variant #E8DEF8
+  - Primary Text: Deep aubergine #21005D
+  - Accent / Focus: Light purple accent #EADDFF
+- TYPOGRAPHY:
+  - Headings: Clean sans-serif (e.g. Outfit), medium weight, natural sentence case
+  - Body Text: Highly legible clean sans-serif
+- CONTAINERS & CARDS:
+  - Borders: None (flat edge alignments)
+  - Shadow: Very soft, low-contrast elevation (0px 2px 4px rgba(0,0,0,0.06))
+  - Radii: 24px - 28px
+- HEADER & FOOTER:
+  - Height & Padding: Centered, clean status bars
+  - Borders: Divider-free, uses background shade shifts
+- INTERACTIVE ELEMENTS:
+  - Buttons: Round pill-shaped blocks (border-radius: 100px), active ripple overlays
+  - Form Inputs: Outlined containers with dynamic borders on active focus
+  - Toggles & Sliders: Rounded pill switch sliders</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
               </div>
             </div>
           </div>
@@ -1028,58 +1214,183 @@
               <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
             </div>
             <div class="inspector-content">
-              <pre class="tab-panel active" id="code-brutalism-css"><code>/* Neo-Brutalist Component Styles */
-.brut-card {
-  background: #ffde47;
-  color: #000000;
-  border: 4px solid #000000;
-  box-shadow: 8px 8px 0px #000000;
-  border-radius: 12px;
-  padding: 24px;
-  font-family: 'JetBrains Mono', monospace;
-  transition: all 0.15s ease;
+              <pre class="tab-panel active" id="code-material-you-css"><code>/* Material You (MD3) Styling */
+.material-card {
+  background: #f3edf7;
+  border-radius: 28px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
-
-.brut-btn {
-  background: #00d2c4;
-  color: #000000;
-  font-family: 'JetBrains Mono', monospace;
-  font-weight: 700;
-  border: 3px solid #000000;
-  box-shadow: 4px 4px 0px #000000;
-  border-radius: 6px;
-  padding: 8px 16px;
-  cursor: pointer;
-}
-
-.brut-btn:active {
-  transform: translate(4px, 4px);
-  box-shadow: 0px 0px 0px #000000;
+.material-fab {
+  background: #eaddff;
+  border-radius: 16px;
+  width: 56px;
+  height: 56px;
+  border: none;
 }</code></pre>
-              <pre class="tab-panel" id="code-brutalism-html"><code>&lt;div class="brut-card"&gt;
-  &lt;h3&gt;Raw Outline Layout&lt;/h3&gt;
-  &lt;button class="brut-btn"&gt;SUBMIT&lt;/button&gt;
+              <pre class="tab-panel" id="code-material-you-html"><code>&lt;div class="material-card"&gt;
+  &lt;h3&gt;Inbox&lt;/h3&gt;
+  &lt;button class="material-fab"&gt;✏️&lt;/button&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>
 
-        <!-- 8. Liquid Glass -->
+        <!-- 9. Glassmorphism -->
+        <section id="glassmorphism" class="style-section">
+          <div class="section-meta">
+            <span class="style-badge">09 · Translucent Frosted Glass</span>
+            <h2>Glassmorphism</h2>
+            <p class="section-desc">Characterized by background blur effects, semi-transparent frosted card styles, borders mimicking glass refractions, and vibrant abstract background shapes that reveal depth.</p>
+          </div>
+
+          <!-- Interactive Sandbox -->
+          <div class="sandbox-container bg-glassmorphic-demo">
+            <div class="glass-orb blob-1"></div>
+            <div class="glass-orb blob-2"></div>
+            <div class="glass-orb blob-3"></div>
+
+            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
+            
+            <div class="glass-card">
+              <div class="glass-chip-row">
+                <span class="glass-logo">✦ INFINITE</span>
+                <span class="glass-card-type">WORLD ACCESS</span>
+              </div>
+              
+              <div class="glass-card-body">
+                <div class="glass-balance-label">AVAILABLE LIMIT</div>
+                <div class="glass-balance-amount">$84,320.00</div>
+              </div>
+              
+              <div class="glass-card-footer">
+                <div class="glass-holder">CHANDLER BING</div>
+                <div class="glass-expires">EXP 12/29</div>
+              </div>
+
+              <button class="glass-btn">
+                <span>View Transactions</span>
+                <span class="arrow">→</span>
+              </button>
+            </div>
+
+            <div class="glass-stats-panel">
+              <div class="stat-item">
+                <span class="stat-dot green"></span>
+                <span class="stat-title">Staking APY</span>
+                <span class="stat-value">12.4%</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-dot blue"></span>
+                <span class="stat-title">Active Pools</span>
+                <span class="stat-value">18</span>
+              </div>
+            </div>
+
+            <div class="sandbox-hints" style="z-index: 10;">
+              <span class="hint-tag">Hover card to see dynamic lighting shifts</span>
+            </div>
+          </div>
+
+          <!-- Documentation, Swatches & Prompts -->
+          <div class="details-grid">
+            <div class="details-card">
+              <h3>Design Parameters & Tokens</h3>
+              <ul class="details-list">
+                <li><strong>Backdrop Blur:</strong> Uses `backdrop-filter: blur(15px-30px)` to diffuse background colors.</li>
+                <li><strong>Translucent Fills:</strong> Card fill is extremely light white e.g., `rgba(255, 255, 255, 0.07)`.</li>
+                <li><strong>Highlight Borders:</strong> A thin semi-transparent border mimics sharp glass light cuts.</li>
+                <li><strong>Vibrancy:</strong> Deep colorful shapes behind the glass give contrast.</li>
+              </ul>
+              
+              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
+              <div class="color-palette">
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: rgba(255, 255, 255, 0.08);" data-hex="rgba(255,255,255,0.08)"></div>
+                  <span class="swatch-label">White 8%</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FF2E93;" data-hex="#FF2E93"></div>
+                  <span class="swatch-label">#FF2E93</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #05C1FF;" data-hex="#05C1FF"></div>
+                  <span class="swatch-label">#05C1FF</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FFB703;" data-hex="#FFB703"></div>
+                  <span class="swatch-label">#FFB703</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-card">
+              <h3>AI Theme Transformation Recipe</h3>
+              <div class="prompt-box">
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Glassmorphism
+- AESTHETICS & MOOD: Translucent, floating, glowing, futuristic, deep.
+- PALETTE:
+  - Base Background: Deep purple-blue dark gradient #0F0C1B to #080614
+  - Panel Background: Frosted white semi-transparent rgba(255,255,255,0.06)
+  - Primary Text: Pure white #FFFFFF
+  - Accent / Focus: Hot pink #FF2E93 and cyan #05C1FF
+- TYPOGRAPHY:
+  - Headings: Geometric sans-serif, bold, tight letter-spacing
+  - Body Text: Clean sans-serif, readable contrast
+- CONTAINERS & CARDS:
+  - Borders: 1px solid rgba(255,255,255,0.125) mimicking sharp light cuts
+  - Shadow: 0 15px 35px rgba(0, 0, 0, 0.4)
+  - Radii: 24px
+- HEADER & FOOTER:
+  - Height & Padding: Padded, floating glass panes
+  - Borders: Thin refractive edge line divider
+- INTERACTIVE ELEMENTS:
+  - Buttons: Frosted background fill with light blur, glowing hover scales
+  - Form Inputs: Translucent glass background with bright border on focus
+  - Toggles & Sliders: Translucent track, glowing neon thumb
+- SPECIFIC GRAPHIC EFFECTS:
+  - backdrop-filter: blur(20px) saturate(180%);
+  - Large colorful drifting glowing blobs behind active glass panels</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Inspector -->
+          <div class="code-inspector">
+            <div class="inspector-tabs">
+              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
+              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
+              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
+            </div>
+            <div class="inspector-content">
+              <pre class="tab-panel active" id="code-glassmorphism-css"><code>/* Glassmorphism CSS Recipe */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}</code></pre>
+              <pre class="tab-panel" id="code-glassmorphism-html"><code>&lt;div class="glass-card"&gt;
+  &lt;span class="glass-logo"&gt;INFINITE&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 10. Liquid Glass -->
         <section id="liquid-glass" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">08 · Fluid Organic Refractions</span>
+            <span class="style-badge">10 · Fluid Organic Refractions</span>
             <h2>Liquid Glass</h2>
             <p class="section-desc">Combining glassmorphic frosting with organic shifting blob dimensions. Animates element borders and gradients using fluid-like keyframe distortions, creating an organic refractive appearance.</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-liquid-glass-demo">
-            
             <div class="liquid-bg-glow"></div>
-            
             <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
             
-            <!-- Morphing Liquid Glass Blob Container -->
             <div class="liquid-glass-wrapper">
               <div class="liquid-blob" id="liquid-blob-1">
                 <div class="liquid-content">
@@ -1129,10 +1440,34 @@
             </div>
 
             <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
+              <h3>AI Theme Transformation Recipe</h3>
               <div class="prompt-box">
-                <p class="prompt-text">Liquid glass web UI component, organic morphing fluid shape, frosted translucent glass with shiny realistic refractions, animated holographic oil slick gradient background, metallic gloss highlights, futuristic, 3D render feel --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Liquid Glass
+- AESTHETICS & MOOD: Fluid, organic, morphing, glossy, luminous, holographic.
+- PALETTE:
+  - Base Background: Cyber obsidian deep space #09090E
+  - Panel Background: Translucent organic white gradient rgba(255,255,255,0.12) to rgba(255,255,255,0.03)
+  - Primary Text: Pure white #FFFFFF
+  - Accent / Focus: Shifting violet #8A2BE2 and aqua cyan #00FFFF
+- TYPOGRAPHY:
+  - Headings: Clean, modern high-fashion sans-serif
+  - Body Text: Clean sans-serif
+- CONTAINERS & CARDS:
+  - Borders: 1px solid rgba(255,255,255,0.22)
+  - Shadow: Volumetric inner highlights (inset 0 10px 25px rgba(255,255,255,0.2)) + outer blur glow
+  - Radii: Morphing continuously using variable border-radius animations
+- HEADER & FOOTER:
+  - Height & Padding: Floating organic headers
+  - Borders: Thin glowing separators
+- INTERACTIVE ELEMENTS:
+  - Buttons: Translucent fluid shapes that stretch on hover
+  - Form Inputs: Floating organic glass tubes
+  - Toggles & Sliders: Liquid-drop indicators
+- SPECIFIC GRAPHIC EFFECTS:
+  - keyframe morphing of border-radius: 60% 40% 30% 70% / 60% 30% 70% 40% to alternate structures;
+  - backdrop-filter: blur(15px) saturate(160%);</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
               </div>
             </div>
           </div>
@@ -1145,220 +1480,36 @@
               <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
             </div>
             <div class="inspector-content">
-              <pre class="tab-panel active" id="code-liquid-glass-css"><code>/* Liquid Glass Morphing Blob recipe */
+              <pre class="tab-panel active" id="code-liquid-glass-css"><code>/* Fluid Morphing Glass Recipe */
 .liquid-blob {
-  width: 240px;
-  height: 240px;
-  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.03) 100%);
+  background: linear-gradient(135deg, rgba(255,255,255,0.12), rgba(255,255,255,0.03));
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.2);
-  box-shadow: 
-    inset 0 10px 20px rgba(255,255,255,0.2),
-    0 15px 35px rgba(138,43,226,0.2);
-  
-  /* Morphing border-radius */
+  border: 1px solid rgba(255, 255, 255, 0.22);
   border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   animation: liquidMorph 8s ease-in-out infinite alternate;
-}
-
-@keyframes liquidMorph {
-  0% {
-    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 40% 60% 50% 50% / 50% 40% 60% 50%;
-  }
-  100% {
-    border-radius: 50% 50% 60% 40% / 40% 60% 50% 60%;
-  }
 }</code></pre>
               <pre class="tab-panel" id="code-liquid-glass-html"><code>&lt;div class="liquid-blob"&gt;
   &lt;div class="liquid-content"&gt;
-    &lt;h4&gt;LIQUID LABS&lt;/h4&gt;
-    &lt;span&gt;89.4%&lt;/span&gt;
+    &lt;span class="liquid-percentage"&gt;89.4%&lt;/span&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
         </section>
 
-        <!-- 9. Bento Grid -->
-        <section id="bento-grid" class="style-section">
-          <div class="section-meta">
-            <span class="style-badge">09 · Modular Layout</span>
-            <h2>Bento Grid</h2>
-            <p class="section-desc">Inspired by Japanese Bento boxes, this style partitions screen space into varying-sized rectangular modules with distinct rounded corners, grouping widgets elegantly to maximize visual hierarchy.</p>
-          </div>
-
-          <!-- Interactive Sandbox -->
-          <div class="sandbox-container bg-bento-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
-            
-            <div class="bento-grid-wrapper">
-              <!-- Item 1: Large Profile Widget -->
-              <div class="bento-item item-profile">
-                <div class="bento-profile-avatar">✦</div>
-                <div class="bento-profile-info">
-                  <h4>Chandler Bing</h4>
-                  <p>Lead Interface Engineer</p>
-                </div>
-                <div class="bento-status-pill">Active</div>
-              </div>
-
-              <!-- Item 2: Analytics Circular Stats -->
-              <div class="bento-item item-stat">
-                <div class="bento-stat-val">76%</div>
-                <div class="bento-stat-lbl">System Perf</div>
-                <div class="bento-stat-bar-outer"><div class="bento-stat-bar-inner" style="width: 76%;"></div></div>
-              </div>
-
-              <!-- Item 3: Quick Toggle Panel -->
-              <div class="bento-item item-switch">
-                <div class="bento-switch-row">
-                  <span>Server Status</span>
-                  <div class="bento-switch" id="bento-switch-server"><div class="thumb"></div></div>
-                </div>
-                <div class="bento-switch-row">
-                  <span>Cache Sync</span>
-                  <div class="bento-switch active" id="bento-switch-cache"><div class="thumb"></div></div>
-                </div>
-              </div>
-
-              <!-- Item 4: Wide Weather/Cal widget -->
-              <div class="bento-item item-wide">
-                <div class="wide-header">
-                  <span>📅 DAILY AGENDA</span>
-                  <span>JULY 1</span>
-                </div>
-                <ul class="wide-agenda-list">
-                  <li class="done">Sync with ATA designers <span class="time">10:00 AM</span></li>
-                  <li>Build Claymorphic components <span class="time">12:30 PM</span></li>
-                  <li>Perform spatial transforms <span class="time">03:00 PM</span></li>
-                </ul>
-              </div>
-
-              <!-- Item 5: Small Icon/Links -->
-              <div class="bento-item item-small item-pink">
-                <span class="bento-sub-icon">💡</span>
-                <span class="bento-sub-lbl">Core Design</span>
-              </div>
-
-              <!-- Item 6: Small Icon/Links -->
-              <div class="bento-item item-small item-cyan">
-                <span class="bento-sub-icon">🚀</span>
-                <span class="bento-sub-lbl">Export CSS</span>
-              </div>
-            </div>
-
-            <div class="sandbox-hints">
-              <span class="hint-tag">Tap toggles or hover cells to trigger grid scaling responses</span>
-            </div>
-          </div>
-
-          <!-- Documentation, Swatches & Prompts -->
-          <div class="details-grid">
-            <div class="details-card">
-              <h3>Design Parameters & Tokens</h3>
-              <ul class="details-list">
-                <li><strong>Grid Setup:</strong> Typically a CSS Grid layout with custom `grid-template-columns` and `gap`.</li>
-                <li><strong>Card Radii:</strong> Consistent, pronounced rounded corners (usually `16px` to `24px`).</li>
-                <li><strong>Spacing:</strong> Uniform gap distance (often `12px`, `16px`, or `24px`).</li>
-                <li><strong>Card Styling:</strong> Modular widgets should share background and hover styling to stay unified.</li>
-              </ul>
-              
-              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
-              <div class="color-palette">
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #18181B;" data-hex="#18181B"></div>
-                  <span class="swatch-label">#18181B</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #27272A;" data-hex="#27272A"></div>
-                  <span class="swatch-label">#27272A</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #3F3F46;" data-hex="#3F3F46"></div>
-                  <span class="swatch-label">#3F3F46</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #A1A1AA;" data-hex="#A1A1AA"></div>
-                  <span class="swatch-label">#A1A1AA</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
-              <div class="prompt-box">
-                <p class="prompt-text">Bento grid dashboard UI layout, dark carbon fiber theme, glowing neon accent icons, modular widgets, rounded corners, clean hierarchy, user profile, analytics charts, calendar widgets, visual aesthetics --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Code Inspector -->
-          <div class="code-inspector">
-            <div class="inspector-tabs">
-              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
-              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
-              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
-            </div>
-            <div class="inspector-content">
-              <pre class="tab-panel active" id="code-bento-grid-css"><code>/* Bento Grid Layout & Card Tokens */
-.bento-grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  grid-auto-rows: minmax(100px, auto);
-}
-
-.bento-item {
-  background: #1c1c1e;
-  border: 1px solid #2c2c2e;
-  border-radius: 20px;
-  padding: 20px;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.bento-item:hover {
-  transform: translateY(-4px);
-  border-color: #3d3d41;
-  background: #222225;
-}
-
-/* Custom grid layouts for items */
-.item-profile {
-  grid-column: span 2;
-  grid-row: span 1;
-}
-.item-wide {
-  grid-column: span 2;
-}</code></pre>
-              <pre class="tab-panel" id="code-bento-grid-html"><code>&lt;div class="bento-grid-wrapper"&gt;
-  &lt;div class="bento-item item-profile"&gt;Profile info&lt;/div&gt;
-  &lt;div class="bento-item"&gt;Small widget&lt;/div&gt;
-  &lt;div class="bento-item item-wide"&gt;Wide widget&lt;/div&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-          </div>
-        </section>
-
-        <!-- 10. Spatial UI -->
+        <!-- 11. Spatial UI -->
         <section id="spatial-ui" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">10 · Depth Layers (Vision Pro Style)</span>
+            <span class="style-badge">11 · Depth Layers (Vision Pro Style)</span>
             <h2>Spatial UI</h2>
             <p class="section-desc">Built for three-dimensional spatial environments. Features floating panels, subtle environmental shadows, frosted dark obsidian materials (pass-through textures), and volumetric mouse hover tilts.</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-spatial-demo">
-            
             <div class="spatial-bg-photo"></div>
-            
             <div class="sandbox-label" style="z-index: 100;">Live Interactive Render</div>
             
-            <!-- Spatial Panel Wrapper for 3D Tilt -->
             <div class="spatial-scene">
               <div class="spatial-panel" id="spatial-panel">
                 <div class="spatial-glass-sheen"></div>
@@ -1432,10 +1583,35 @@
             </div>
 
             <div class="details-card">
-              <h3>AI Prompts (Midjourney / DALL-E)</h3>
+              <h3>AI Theme Transformation Recipe</h3>
               <div class="prompt-box">
-                <p class="prompt-text">Spatial UI glass operating system, floating translucent obsidian panels inside a modern living room, visionOS style, 3D volumetric depth layers, glowing glass button highlights, soft volumetric ambient occlusion shadows --v 6.0</p>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Prompt</button>
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Spatial OS (visionOS)
+- AESTHETICS & MOOD: Floating, dimensional, volumetric, obsidian, translucent.
+- PALETTE:
+  - Base Background: Room pass-through background blurred photo
+  - Panel Background: Frosted obsidian dark glass rgba(20,20,25,0.55)
+  - Primary Text: Crisp pure white #FFFFFF
+  - Accent / Focus: Soft ambient white glow rgba(255,255,255,0.2)
+- TYPOGRAPHY:
+  - Headings: Semi-bold sans-serif (e.g. Outfit), tracking, uppercase
+  - Body Text: Translucent white text rgba(255,255,255,0.75)
+- CONTAINERS & CARDS:
+  - Borders: 1px solid rgba(255,255,255,0.12)
+  - Shadow: Large environmental ambient occlusion shadows (0 30px 70px rgba(0,0,0,0.6))
+  - Radii: 28px
+- HEADER & FOOTER:
+  - Height & Padding: Floating layout with top status lines
+  - Borders: No hard lines, separated by depth planes
+- INTERACTIVE ELEMENTS:
+  - Buttons: Pill buttons with volumetric scale (transform: translateZ(10px)), active glows
+  - Form Inputs: Highly blurred dark glass capsules
+  - Toggles & Sliders: Translucent tracks with volumetric circular thumbs
+- SPECIFIC GRAPHIC EFFECTS:
+  - transform-style: preserve-3d;
+  - transform: perspective(1000px) rotateX(var(--rx)) rotateY(var(--ry));
+  - Radial sheen highlights that follow cursor coordinates</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
               </div>
             </div>
           </div>
@@ -1448,31 +1624,541 @@
               <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
             </div>
             <div class="inspector-content">
-              <pre class="tab-panel active" id="code-spatial-ui-css"><code>/* Spatial UI depth glass recipe */
-.spatial-scene {
-  perspective: 800px;
-}
-
+              <pre class="tab-panel active" id="code-spatial-ui-css"><code>/* Spatial Volumetric Glass Panels */
 .spatial-panel {
-  background: rgba(20, 20, 25, 0.6);
-  backdrop-filter: blur(25px) saturate(190%);
-  -webkit-backdrop-filter: blur(25px) saturate(190%);
-  border: 1px solid rgba(255, 255, 255, 0.15);
-  box-shadow: 
-    0 40px 80px rgba(0, 0, 0, 0.5),
-    inset 0 1px 1px rgba(255, 255, 255, 0.2);
-  border-radius: 28px;
-  
-  /* 3D transforms updated via JS on mouse move */
+  background: rgba(20, 20, 25, 0.55);
+  backdrop-filter: blur(30px) saturate(210%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.6);
   transform-style: preserve-3d;
   transform: rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
-  transition: transform 0.1s ease;
 }</code></pre>
               <pre class="tab-panel" id="code-spatial-ui-html"><code>&lt;div class="spatial-scene"&gt;
   &lt;div class="spatial-panel"&gt;
     &lt;div class="spatial-header"&gt;spatial.OS&lt;/div&gt;
-    &lt;h3&gt;Depth Layers&lt;/h3&gt;
   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 12. Brutalism -->
+        <section id="brutalism" class="style-section">
+          <div class="section-meta">
+            <span class="style-badge">12 · Raw Neo-Brutalist Outlines</span>
+            <h2>Brutalism</h2>
+            <p class="section-desc">Neo-brutalism features raw, unpolished HTML shapes, thick black solid borders, bright high-saturation background fills, monospaced typography, and hard offset drop shadows that do not blur.</p>
+          </div>
+
+          <!-- Interactive Sandbox -->
+          <div class="sandbox-container bg-brutalist-demo">
+            <div class="sandbox-label">Live Interactive Render</div>
+            
+            <div class="brut-card">
+              <div class="brut-header">
+                <span class="brut-tag">HTML5 SNIPPET</span>
+                <span class="brut-badge">HOT 🔥</span>
+              </div>
+              
+              <h3 class="brut-title">RAW COMPONENT CODE</h3>
+              
+              <p class="brut-desc">We reject gradient blurs and glass effects. Here, shadows are solid black rectangles offset at precise angles. Fonts are raw mono.</p>
+              
+              <div class="brut-input-row">
+                <input type="text" class="brut-input" placeholder="enter email address">
+                <button class="brut-btn btn-accent" id="brut-btn-submit">SUBMIT</button>
+              </div>
+
+              <div class="brut-pill-row">
+                <span class="brut-pill select-cyan">#webdev</span>
+                <span class="brut-pill select-purple">#brutalism</span>
+                <span class="brut-pill select-orange">#css</span>
+              </div>
+            </div>
+
+            <div class="sandbox-hints">
+              <span class="hint-tag">Interactive input and click active solid state</span>
+            </div>
+          </div>
+
+          <!-- Documentation, Swatches & Prompts -->
+          <div class="details-grid">
+            <div class="details-card">
+              <h3>Design Parameters & Tokens</h3>
+              <ul class="details-list">
+                <li><strong>Outlines:</strong> Symmetrical thick black borders (usually `3px` or `4px` solid `#000000`).</li>
+                <li><strong>Shadows:</strong> Hard offset shadows without blur: `box-shadow: 8px 8px 0px #000`.</li>
+                <li><strong>Saturated Fills:</strong> Pure primaries (yellow, blue, orange, mint green).</li>
+                <li><strong>Hover State:</strong> Cards slide onto their shadow: `transform: translate(4px, 4px); box-shadow: 4px 4px 0px #000;`.</li>
+              </ul>
+              
+              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
+              <div class="color-palette">
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FFDE47; border: 2px solid #000;" data-hex="#FFDE47"></div>
+                  <span class="swatch-label">#FFDE47</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #54E346; border: 2px solid #000;" data-hex="#54E346"></div>
+                  <span class="swatch-label">#54E346</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FF7B54; border: 2px solid #000;" data-hex="#FF7B54"></div>
+                  <span class="swatch-label">#FF7B54</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #00D2C4; border: 2px solid #000;" data-hex="#00D2C4"></div>
+                  <span class="swatch-label">#00D2C4</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-card">
+              <h3>AI Theme Transformation Recipe</h3>
+              <div class="prompt-box">
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Neo-Brutalism
+- AESTHETICS & MOOD: Raw, unpolished, high contrast, blocky, flat.
+- PALETTE:
+  - Base Background: Saturated mint green #54E346 with fine grid
+  - Panel Background: Bright warning yellow #FFDE47
+  - Primary Text: Pitch black #000000
+  - Accent / Focus: Deep orange #FF7B54 and cyan #00D2C4
+- TYPOGRAPHY:
+  - Headings: Monospace (e.g. JetBrains Mono), heavy weights, blocky letters
+  - Body Text: Monospace, high contrast bold
+- CONTAINERS & CARDS:
+  - Borders: Thick solid black 4px solid #000000
+  - Shadow: Hard solid black offset (8px 8px 0px #000000), no blur
+  - Radii: 12px
+- HEADER & FOOTER:
+  - Height & Padding: Square padded sections with thick border rules
+  - Borders: 4px solid #000000 bottom/top lines
+- INTERACTIVE ELEMENTS:
+  - Buttons: Cyan background, thick 3px black borders, hard 4px shadow, slides on active press
+  - Form Inputs: White fill, thick 3px black border, monospaced placeholder text
+  - Toggles & Sliders: Saturated sliders with thick outlines</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Inspector -->
+          <div class="code-inspector">
+            <div class="inspector-tabs">
+              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
+              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
+              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
+            </div>
+            <div class="inspector-content">
+              <pre class="tab-panel active" id="code-brutalism-css"><code>/* Brutalist Outlines & Solid Shadows */
+.brut-card {
+  background: #ffde47;
+  border: 4px solid #000000;
+  box-shadow: 8px 8px 0px #000000;
+  border-radius: 12px;
+  font-family: 'JetBrains Mono', monospace;
+}
+.brut-btn:active {
+  transform: translate(4px, 4px);
+  box-shadow: 0px 0px 0px #000000;
+}</code></pre>
+              <pre class="tab-panel" id="code-brutalism-html"><code>&lt;div class="brut-card"&gt;
+  &lt;input type="text" class="brut-input" placeholder="email"&gt;
+  &lt;button class="brut-btn"&gt;SUBMIT&lt;/button&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 13. Maximalism -->
+        <section id="maximalism" class="style-section">
+          <div class="section-meta">
+            <span class="style-badge">13 · Controlled Chaos</span>
+            <h2>Maximalism</h2>
+            <p class="section-desc">Celebrating visual clutter, heavy patterns, clashing colors, glowing gradients, rotating grids, and retro sticker collages. It pushes boundaries, creating highly memorable impact.</p>
+          </div>
+
+          <!-- Interactive Sandbox -->
+          <div class="sandbox-container bg-maximalist-demo">
+            <div class="sandbox-label">Live Interactive Render</div>
+            
+            <div class="max-collage">
+              <div class="max-badge-rotate">LIMITLESS</div>
+              
+              <div class="max-box-gradient">
+                <h3>CREATIVE OVERFLOW!</h3>
+              </div>
+              
+              <div class="max-sticker-1">★ 99% RAW</div>
+              <div class="max-sticker-2">CLICK IT!</div>
+              
+              <p class="max-paragraph">Break standard grid limits. Overlapping text, diagonal badges, saturated neon fills, and aggressive patterns combined together.</p>
+
+              <div class="max-footer-btn-row">
+                <button class="max-btn max-btn-pink">DISCOVER</button>
+                <button class="max-btn max-btn-green">JOIN CLUB</button>
+              </div>
+            </div>
+
+            <div class="sandbox-hints">
+              <span class="hint-tag">Hover components to trigger scale & rotation animations</span>
+            </div>
+          </div>
+
+          <!-- Documentation, Swatches & Prompts -->
+          <div class="details-grid">
+            <div class="details-card">
+              <h3>Design Parameters & Tokens</h3>
+              <ul class="details-list">
+                <li><strong>Overlapping Layers:</strong> Uses absolute positioning and varying `z-index`.</li>
+                <li><strong>Rotations:</strong> Small rotate transforms (`rotate(-3deg)`, `rotate(5deg)`) add chaos.</li>
+                <li><strong>Patterns:</strong> Repeating linear-gradients (stripes, checkboards) as card/text frames.</li>
+                <li><strong>Clashing Colors:</strong> Combining extremely high-saturation opposites on the color wheel.</li>
+              </ul>
+              
+              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
+              <div class="color-palette">
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FF007F;" data-hex="#FF007F"></div>
+                  <span class="swatch-label">#FF007F</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #CCFF00;" data-hex="#CCFF00"></div>
+                  <span class="swatch-label">#CCFF00</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #7A00FF;" data-hex="#7A00FF"></div>
+                  <span class="swatch-label">#7A00FF</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #00E5FF;" data-hex="#00E5FF"></div>
+                  <span class="swatch-label">#00E5FF</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-card">
+              <h3>AI Theme Transformation Recipe</h3>
+              <div class="prompt-box">
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Saturated Maximalism
+- AESTHETICS & MOOD: Vibrant, chaotic, loud, layered, rule-breaking.
+- PALETTE:
+  - Base Background: Jet black with dense repeating grid pattern #000000
+  - Panel Background: Repeating yellow warning diagonal stripes #CCFF00 / #111111
+  - Primary Text: Saturated neon pink #FF007F
+  - Accent / Focus: Cyber purple #7A00FF and electric cyan #00E5FF
+- TYPOGRAPHY:
+  - Headings: Ultra-bold impact fonts (e.g. Bungee), slanted
+  - Body Text: Thick sans-serif or typewriter monospace
+- CONTAINERS & CARDS:
+  - Borders: Thick double borders (5px double #FF007F)
+  - Shadow: Saturated hard drops (8px 8px 0px #00E5FF)
+  - Radii: Variable, asymmetrical
+- HEADER & FOOTER:
+  - Height & Padding: Packed layout, overlapping badges
+  - Borders: Alternating neon grid frames
+- INTERACTIVE ELEMENTS:
+  - Buttons: Bright neon fills, rotating transforms, offset border frames
+  - Form Inputs: Saturated fills with dashed high-contrast borders
+  - Toggles & Sliders: Glitchy flashing styles
+- SPECIFIC GRAPHIC EFFECTS:
+  - transform: rotate(-3deg);
+  - Multiple absolute positioned overlapping elements with high z-indices</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Inspector -->
+          <div class="code-inspector">
+            <div class="inspector-tabs">
+              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
+              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
+              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
+            </div>
+            <div class="inspector-content">
+              <pre class="tab-panel active" id="code-maximalism-css"><code>/* Maximalist Clash */
+.max-collage {
+  background-image: repeating-linear-gradient(45deg, #ccff00, #ccff00 12px, #111111 12px, #111111 24px);
+  border: 6px double #ff007f;
+  box-shadow: 8px 8px 0px #00e5ff;
+}
+.max-badge-rotate {
+  transform: rotate(-6deg);
+}</code></pre>
+              <pre class="tab-panel" id="code-maximalism-html"><code>&lt;div class="max-collage"&gt;
+  &lt;div class="max-badge-rotate"&gt;LIMITLESS&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 14. Cyberpunk UI -->
+        <section id="cyberpunk-ui" class="style-section">
+          <div class="section-meta">
+            <span class="style-badge">14 · High-Tech Glitch & Neon</span>
+            <h2>Cyberpunk UI</h2>
+            <p class="section-desc">A retro-futuristic style featuring neon scanlines, dark wire grids, blocky monospace text with glitch effects, and utility tags displaying system telemetry.</p>
+          </div>
+
+          <!-- Interactive Sandbox -->
+          <div class="sandbox-container bg-cyber-demo">
+            <div class="cyber-scanline"></div>
+            <div class="cyber-grid-bg"></div>
+            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
+            
+            <div class="cyber-card">
+              <div class="cyber-header">
+                <span class="cyber-status-pill">SYS.ONLINE</span>
+                <span class="cyber-serial">#89-0XF</span>
+              </div>
+              <div class="cyber-body">
+                <div class="cyber-glitch-text" data-text="CYBER.NET">CYBER.NET</div>
+                <p class="cyber-p">REBEL TECH CORE ACTIVATED</p>
+                <div class="cyber-stat-bar-outer">
+                  <div class="cyber-stat-bar-inner" style="width: 82%;"></div>
+                </div>
+              </div>
+              <div class="cyber-footer">
+                <button class="cyber-btn" id="cyber-btn-override">OVERRIDE</button>
+              </div>
+            </div>
+
+            <div class="sandbox-hints" style="z-index: 10;">
+              <span class="hint-tag">Click override to trigger sound card alert</span>
+            </div>
+          </div>
+
+          <!-- Documentation, Swatches & Prompts -->
+          <div class="details-grid">
+            <div class="details-card">
+              <h3>Design Parameters & Tokens</h3>
+              <ul class="details-list">
+                <li><strong>Backgrounds:</strong> Dark graphite/indigo grid overlays (`#0a0a10` base).</li>
+                <li><strong>Accents:</strong> High-saturation fluorescent pink (`#ff0055`) and cyan (`#00ffcc`).</li>
+                <li><strong>Glitch Typography:</strong> Simulated duplication layers shifted left/right using CSS `clip-path` animations.</li>
+                <li><strong>Scanlines:</strong> Repeating linear-gradients moving vertically across the screen.</li>
+              </ul>
+              
+              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
+              <div class="color-palette">
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #0A0A10;" data-hex="#0A0A10"></div>
+                  <span class="swatch-label">#0A0A10</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FF0055;" data-hex="#FF0055"></div>
+                  <span class="swatch-label">#FF0055</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #00FFCC;" data-hex="#00FFCC"></div>
+                  <span class="swatch-label">#00FFCC</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FFFF00;" data-hex="#FFFF00"></div>
+                  <span class="swatch-label">#FFFF00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-card">
+              <h3>AI Theme Transformation Recipe</h3>
+              <div class="prompt-box">
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Cyberpunk Glitch
+- AESTHETICS & MOOD: Retro-tech, rebellious, high-contrast, glitchy, radioactive.
+- PALETTE:
+  - Base Background: Cyber navy #0A0A10 with neon scanlines
+  - Panel Background: Dark carbon navy #12121A
+  - Primary Text: Acid yellow #FFFF00 or neon cyan #00FFCC
+  - Accent / Focus: Glowing fluorescent pink #FF0055
+- TYPOGRAPHY:
+  - Headings: Monospace blocky font, uppercase, glitch clip-path animations
+  - Body Text: Saturated monospace (e.g. JetBrains Mono), bright green or yellow
+- CONTAINERS & CARDS:
+  - Borders: 2px solid #00FFCC with clipped top-right corners
+  - Shadow: Saturated hard dual shadows (3px 3px 0px #FF0055, -3px -3px 0px #00FFCC)
+  - Radii: 0px (strict diagonals)
+- HEADER & FOOTER:
+  - Height & Padding: Aligned tech bars with code read-outs
+  - Borders: Yellow/black diagonal danger warning border striping
+- INTERACTIVE ELEMENTS:
+  - Buttons: Saturated cyan blocks, clip-paths, cursor-pointer scan effects
+  - Form Inputs: Dark fills, neon green text, flashing cursors
+  - Toggles & Sliders: Neon ticks, audio gauge modules</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Inspector -->
+          <div class="code-inspector">
+            <div class="inspector-tabs">
+              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
+              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
+              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
+            </div>
+            <div class="inspector-content">
+              <pre class="tab-panel active" id="code-cyberpunk-ui-css"><code>/* Cyberpunk Neon Glitch Components */
+.cyber-card {
+  position: relative;
+  background: #12121a;
+  border: 2px solid #00ffcc;
+  box-shadow: 4px 4px 0px #ff0055;
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+  padding: 20px;
+}
+.cyber-glitch-text {
+  font-family: 'Bungee', sans-serif;
+  color: #ffff00;
+  text-shadow: 2px 2px #ff0055;
+}</code></pre>
+              <pre class="tab-panel" id="code-cyberpunk-ui-html"><code>&lt;div class="cyber-card"&gt;
+  &lt;div class="cyber-header"&gt;SYS.ONLINE&lt;/div&gt;
+  &lt;h3 class="cyber-glitch-text"&gt;CYBER.NET&lt;/h3&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 15. Sci-Fi HUD -->
+        <section id="scifi-hud" class="style-section">
+          <div class="section-meta">
+            <span class="style-badge">15 · Data Density Wireframes</span>
+            <h2>Sci-Fi HUD</h2>
+            <p class="section-desc">A complex, data-dense interface inspired by tactical displays and engineering telemetry. Features wireframe layouts, target indicators, and glowing grid crosshairs.</p>
+          </div>
+
+          <!-- Interactive Sandbox -->
+          <div class="sandbox-container bg-hud-demo">
+            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
+            
+            <div class="hud-card">
+              <div class="hud-telemetry-border">
+                <div class="corner-tr"></div>
+                <div class="corner-tl"></div>
+                <div class="corner-br"></div>
+                <div class="corner-bl"></div>
+              </div>
+              <div class="hud-header">
+                <span class="hud-target-marker">⌖</span>
+                <h4>SECTOR SCANNER</h4>
+              </div>
+              <div class="hud-body">
+                <div class="hud-crosshair-area">
+                  <div class="crosshair-ring"></div>
+                  <div class="crosshair-axis-x"></div>
+                  <div class="crosshair-axis-y"></div>
+                  <div class="crosshair-scanner-line" id="hud-scan-line"></div>
+                  <span class="target-locked-text">TARGET IN RANGE</span>
+                </div>
+                <div class="hud-telemetry-row">
+                  <span>ALT: 4,092M</span>
+                  <span>VEL: MACH 1.8</span>
+                </div>
+              </div>
+              <div class="hud-footer">
+                <button class="hud-btn" id="hud-btn-lock">ENGAGE TARGET</button>
+              </div>
+            </div>
+
+            <div class="sandbox-hints" style="z-index: 10;">
+              <span class="hint-tag">Hover card to see scanline speeds double</span>
+            </div>
+          </div>
+
+          <!-- Documentation, Swatches & Prompts -->
+          <div class="details-grid">
+            <div class="details-card">
+              <h3>Design Parameters & Tokens</h3>
+              <ul class="details-list">
+                <li><strong>Blueprint Grids:</strong> Blueprint cyan grid line drawings overlaying navy backdrops.</li>
+                <li><strong>Data Borders:</strong> Corners bracket frames (`border-left`/`border-top` combinations).</li>
+                <li><strong>Indicators:</strong> Telemetry markers, battery charts, angle metrics.</li>
+                <li><strong>Glowing Lines:</strong> Crisp neon lines with small text glows (`text-shadow: 0 0 4px #00ffc4`).</li>
+              </ul>
+              
+              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
+              <div class="color-palette">
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #030712;" data-hex="#030712"></div>
+                  <span class="swatch-label">#030712</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #00FFC4;" data-hex="#00FFC4"></div>
+                  <span class="swatch-label">Tactical</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: rgba(0, 255, 196, 0.1);" data-hex="rgba(0,255,196,0.1)"></div>
+                  <span class="swatch-label">Wireframe</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #38BDF8;" data-hex="#38BDF8"></div>
+                  <span class="swatch-label">#38BDF8</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-card">
+              <h3>AI Theme Transformation Recipe</h3>
+              <div class="prompt-box">
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Tactical Sci-Fi HUD
+- AESTHETICS & MOOD: High-tech, diagnostic, telemetry-heavy, wireframe, geometric.
+- PALETTE:
+  - Base Background: Deep space charcoal-black #030712
+  - Panel Background: Translucent tech glass rgba(0,255,196,0.03)
+  - Primary Text: Bright tactical green-cyan #00FFC4
+  - Accent / Focus: Glowing sky blue #38BDF8
+- TYPOGRAPHY:
+  - Headings: Monospace uppercase, tight tracking, target icon tags
+  - Body Text: Highly compact monospace, technical charts format
+- CONTAINERS & CARDS:
+  - Borders: Thin cyan outlines with bracketed corner frames
+  - Shadow: Micro neon glows (box-shadow: 0 0 8px rgba(0,255,196,0.2))
+  - Radii: 0px (perfect wireframe boxes)
+- HEADER & FOOTER:
+  - Height & Padding: Compact bars loaded with telemetry readings
+  - Borders: Double-dashed rule line dividers
+- INTERACTIVE ELEMENTS:
+  - Buttons: Wireframe buttons, neon text, grid highlights on hover
+  - Form Inputs: Dark tech compartments with crosshair focus corners
+  - Toggles & Sliders: Diagnostic dials, sound meter gauge sliders</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Inspector -->
+          <div class="code-inspector">
+            <div class="inspector-tabs">
+              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
+              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
+              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
+            </div>
+            <div class="inspector-content">
+              <pre class="tab-panel active" id="code-scifi-hud-css"><code>/* Tactical Sci-Fi HUD components */
+.hud-card {
+  position: relative;
+  background: rgba(0, 255, 196, 0.03);
+  border: 1px solid rgba(0, 255, 196, 0.25);
+  font-family: 'JetBrains Mono', monospace;
+  padding: 20px;
+}
+.hud-telemetry-border .corner-tr {
+  position: absolute;
+  top: -2px; right: -2px;
+  width: 10px; height: 10px;
+  border-top: 3px solid #00ffc4;
+  border-right: 3px solid #00ffc4;
+}</code></pre>
+              <pre class="tab-panel" id="code-scifi-hud-html"><code>&lt;div class="hud-card"&gt;
+  &lt;div class="hud-telemetry-border"&gt;
+    &lt;div class="corner-tr"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;h4&gt;SCANNER&lt;/h4&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
