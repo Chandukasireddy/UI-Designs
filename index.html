@@ -6,6 +6,22 @@
   <title>UI Style Archive — Modern Web Design Reference & Codebook</title>
   <meta name="description" content="An interactive codebook and design reference showcasing 15 major UI design trends with live CSS sandboxes, color codes, and AI prompts.">
   
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✦</text></svg>">
+  
+  <!-- Open Graph / Facebook Share Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="UI Style Archive — 15 Modern Web Design Trends">
+  <meta property="og:description" content="An interactive developer codebook showcasing 15 UI styles with live browser sandboxes, CSS variables, and AI prompt recipes.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
+  <meta property="og:url" content="https://github.com/chandukasireddy/UI-Designs">
+  
+  <!-- Twitter Share Metadata -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="UI Style Archive — 15 Modern Web Design Trends">
+  <meta name="twitter:description" content="An interactive developer codebook showcasing 15 UI styles with live browser sandboxes, CSS variables, and AI prompt recipes.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop">
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,15 +50,15 @@
       
       <nav class="sidebar-nav">
         <ul class="nav-list">
-          <li><a href="#art-deco" class="nav-item active" data-style="art-deco"><span class="nav-num">01</span> Art Deco</a></li>
-          <li><a href="#skeuomorphism" class="nav-item" data-style="skeuomorphism"><span class="nav-num">02</span> Skeuomorphism</a></li>
-          <li><a href="#y2k-aero" class="nav-item" data-style="y2k-aero"><span class="nav-num">03</span> Y2K / Aero</a></li>
-          <li><a href="#neomorphism" class="nav-item" data-style="neomorphism"><span class="nav-num">04</span> Neomorphism</a></li>
-          <li><a href="#claymorphism" class="nav-item" data-style="claymorphism"><span class="nav-num">05</span> Claymorphism</a></li>
-          <li><a href="#minimalism" class="nav-item" data-style="minimalism"><span class="nav-num">06</span> Minimalism</a></li>
-          <li><a href="#bento-grid" class="nav-item" data-style="bento-grid"><span class="nav-num">07</span> Bento Grid</a></li>
-          <li><a href="#material-you" class="nav-item" data-style="material-you"><span class="nav-num">08</span> Material You</a></li>
-          <li><a href="#glassmorphism" class="nav-item" data-style="glassmorphism"><span class="nav-num">09</span> Glassmorphism</a></li>
+          <li><a href="#glassmorphism" class="nav-item active" data-style="glassmorphism"><span class="nav-num">01</span> Glassmorphism</a></li>
+          <li><a href="#art-deco" class="nav-item" data-style="art-deco"><span class="nav-num">02</span> Art Deco</a></li>
+          <li><a href="#skeuomorphism" class="nav-item" data-style="skeuomorphism"><span class="nav-num">03</span> Skeuomorphism</a></li>
+          <li><a href="#y2k-aero" class="nav-item" data-style="y2k-aero"><span class="nav-num">04</span> Y2K / Aero</a></li>
+          <li><a href="#neomorphism" class="nav-item" data-style="neomorphism"><span class="nav-num">05</span> Neomorphism</a></li>
+          <li><a href="#claymorphism" class="nav-item" data-style="claymorphism"><span class="nav-num">06</span> Claymorphism</a></li>
+          <li><a href="#minimalism" class="nav-item" data-style="minimalism"><span class="nav-num">07</span> Minimalism</a></li>
+          <li><a href="#bento-grid" class="nav-item" data-style="bento-grid"><span class="nav-num">08</span> Bento Grid</a></li>
+          <li><a href="#material-you" class="nav-item" data-style="material-you"><span class="nav-num">09</span> Material You</a></li>
           <li><a href="#liquid-glass" class="nav-item" data-style="liquid-glass"><span class="nav-num">10</span> Liquid Glass</a></li>
           <li><a href="#spatial-ui" class="nav-item" data-style="spatial-ui"><span class="nav-num">11</span> Spatial UI</a></li>
           <li><a href="#brutalism" class="nav-item" data-style="brutalism"><span class="nav-num">12</span> Brutalism</a></li>
@@ -67,7 +83,7 @@
       <header class="app-header">
         <div class="header-intro">
           <h1>UI Design Style Reference Directory</h1>
-          <p>A high-fidelity developer resource showcasing 15 UI styles arranged by their evolutionary timeline, with live rendered sandboxes and adaptable prompts.</p>
+          <p>An interactive open-source developer codebook showcasing 15 UI styles arranged chronologically, with live rendered browser mockups.</p>
         </div>
         <div class="header-actions">
           <button id="theme-preview-toggle" class="btn btn-outline" title="Simulate different screen backdrops">
@@ -79,41 +95,220 @@
       <!-- Styles Content Grid -->
       <div class="styles-container">
 
-        <!-- 1. Art Deco -->
-        <section id="art-deco" class="style-section active-section">
+        <!-- 1. Glassmorphism -->
+        <section id="glassmorphism" class="style-section active-section">
           <div class="section-meta">
-            <span class="style-badge">01 · Gatsby Geometric Elegance</span>
+            <span class="style-badge">01 · Translucent Frosted Glass</span>
+            <h2>Glassmorphism</h2>
+            <p class="section-desc">Characterized by background blur effects, semi-transparent frosted card styles, borders mimicking glass refractions, and vibrant abstract background shapes that reveal depth.</p>
+          </div>
+
+          <!-- Interactive Sandbox (Mock Webpage) -->
+          <div class="sandbox-container bg-glassmorphic-demo">
+            <div class="glass-orb blob-1"></div>
+            <div class="glass-orb blob-2"></div>
+            <div class="glass-orb blob-3"></div>
+            
+            <!-- Browser Mock -->
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">orbit.exchange/dashboard</div>
+              </div>
+              
+              <div class="mock-website glass-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header glass-header">
+                  <span class="glass-logo">✦ orbit</span>
+                  <nav class="mock-nav">
+                    <span>Swap</span>
+                    <span>Pool</span>
+                    <span class="active">Stake</span>
+                  </nav>
+                  <button class="glass-btn-accent">Connect</button>
+                </header>
+                
+                <!-- Mock Main Content -->
+                <main class="mock-main glass-main">
+                  <div class="glass-card">
+                    <div class="glass-chip-row">
+                      <span class="glass-card-logo">✦ STAKING</span>
+                      <span class="glass-card-type">APY 12.4%</span>
+                    </div>
+                    <div class="glass-card-body">
+                      <div class="glass-balance-label">STAKED AMOUNT</div>
+                      <div class="glass-balance-amount">$84,320.00</div>
+                    </div>
+                  </div>
+                  
+                  <div class="glass-stats-panel">
+                    <div class="stat-item">
+                      <span class="stat-dot green"></span>
+                      <span class="stat-title">Active Pools</span>
+                      <span class="stat-value">18</span>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer glass-footer">
+                  <span>Secure by Orbit Protocol © 2026</span>
+                </footer>
+              </div>
+            </div>
+
+            <div class="sandbox-hints" style="z-index: 10;">
+              <span class="hint-tag">Hover the mockup viewport to see glass refraction shifts</span>
+            </div>
+          </div>
+
+          <!-- Documentation, Swatches & Prompts -->
+          <div class="details-grid">
+            <div class="details-card">
+              <h3>Design Parameters & Tokens</h3>
+              <ul class="details-list">
+                <li><strong>Backdrop Blur:</strong> Uses `backdrop-filter: blur(15px-30px)` to diffuse background colors.</li>
+                <li><strong>Translucent Fills:</strong> Card fill is extremely light white e.g., `rgba(255, 255, 255, 0.07)`.</li>
+                <li><strong>Highlight Borders:</strong> A thin semi-transparent border mimics sharp glass light cuts.</li>
+                <li><strong>Vibrancy:</strong> Deep colorful shapes behind the glass give contrast.</li>
+              </ul>
+              
+              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
+              <div class="color-palette">
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: rgba(255, 255, 255, 0.08);" data-hex="rgba(255,255,255,0.08)"></div>
+                  <span class="swatch-label">White 8%</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FF2E93;" data-hex="#FF2E93"></div>
+                  <span class="swatch-label">#FF2E93</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #05C1FF;" data-hex="#05C1FF"></div>
+                  <span class="swatch-label">#05C1FF</span>
+                </div>
+                <div class="color-swatch-wrapper">
+                  <div class="color-swatch" style="background-color: #FFB703;" data-hex="#FFB703"></div>
+                  <span class="swatch-label">#FFB703</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="details-card">
+              <h3>AI Theme Transformation Recipe</h3>
+              <div class="prompt-box">
+                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
+- THEME NAME: Glassmorphism
+- AESTHETICS & MOOD: Translucent, floating, glowing, futuristic, deep.
+- PALETTE:
+  - Base Background: Deep purple-blue dark gradient #0F0C1B to #080614
+  - Panel Background: Frosted white semi-transparent rgba(255,255,255,0.06)
+  - Primary Text: Pure white #FFFFFF
+  - Accent / Focus: Hot pink #FF2E93 and cyan #05C1FF
+- TYPOGRAPHY:
+  - Headings: Geometric sans-serif, bold, tight letter-spacing
+  - Body Text: Clean sans-serif, readable contrast
+- CONTAINERS & CARDS:
+  - Borders: 1px solid rgba(255,255,255,0.125) mimicking sharp light cuts
+  - Shadow: 0 15px 35px rgba(0, 0, 0, 0.4)
+  - Radii: 24px
+- HEADER & FOOTER:
+  - Height & Padding: Padded, floating glass panes
+  - Borders: Thin refractive edge line divider
+- INTERACTIVE ELEMENTS:
+  - Buttons: Frosted background fill with light blur, glowing hover scales
+  - Form Inputs: Translucent glass background with bright border on focus
+  - Toggles & Sliders: Translucent track, glowing neon thumb
+- SPECIFIC GRAPHIC EFFECTS:
+  - backdrop-filter: blur(20px) saturate(180%);
+  - Large colorful drifting glowing blobs behind active glass panels</pre>
+                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Code Inspector -->
+          <div class="code-inspector">
+            <div class="inspector-tabs">
+              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
+              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
+              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
+            </div>
+            <div class="inspector-content">
+              <pre class="tab-panel active" id="code-glassmorphism-css"><code>/* Glassmorphism CSS Recipe */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px) saturate(180%);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}</code></pre>
+              <pre class="tab-panel" id="code-glassmorphism-html"><code>&lt;div class="glass-card"&gt;
+  &lt;span class="glass-logo"&gt;INFINITE&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 2. Art Deco -->
+        <section id="art-deco" class="style-section">
+          <div class="section-meta">
+            <span class="style-badge">02 · Gatsby Geometric Elegance</span>
             <h2>Art Deco</h2>
             <p class="section-desc">The high-luxury aesthetic of the Roaring Twenties. Characterized by intricate golden geometric lines, symmetry, jet-black marble slate backgrounds, and fine serif fonts.</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-deco-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="deco-card">
-              <div class="deco-border-inner"></div>
-              <div class="deco-corner-accent tl"></div>
-              <div class="deco-corner-accent tr"></div>
-              <div class="deco-corner-accent bl"></div>
-              <div class="deco-corner-accent br"></div>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">thegatsby.com/booking</div>
+              </div>
               
-              <div class="deco-header">
-                <span class="deco-crown">⚜</span>
-                <h3 class="deco-title">THE GATSBY</h3>
-              </div>
-              <div class="deco-body">
-                <p>ELEGANCE & GEOMETRIC SPLENDOR</p>
-                <span class="deco-divider"></span>
-                <p class="deco-subtitle">ESTABLISHED 1925</p>
-              </div>
-              <div class="deco-footer">
-                <button class="deco-btn" id="deco-btn-reserve">RESERVE TABLE</button>
+              <div class="mock-website deco-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header deco-header">
+                  <span class="deco-logo">⚜ gatsby</span>
+                  <nav class="mock-nav">
+                    <span>Rooms</span>
+                    <span>Salon</span>
+                    <span class="active">Reserve</span>
+                  </nav>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main deco-main">
+                  <div class="deco-card">
+                    <div class="deco-border-inner"></div>
+                    <div class="deco-corner-accent tl"></div>
+                    <div class="deco-corner-accent tr"></div>
+                    <div class="deco-corner-accent bl"></div>
+                    <div class="deco-corner-accent br"></div>
+                    
+                    <div class="deco-content-box">
+                      <span class="deco-crown">⚜</span>
+                      <h3 class="deco-title">THE GATSBY SUITE</h3>
+                      <p>Roaring Elegance. Book your vintage suite.</p>
+                      <span class="deco-divider"></span>
+                      <button class="deco-btn" id="deco-btn-reserve">RESERVE TABLE</button>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer deco-footer">
+                  <span>Gatsby Hotel Co. - New York, NY</span>
+                </footer>
               </div>
             </div>
 
             <div class="sandbox-hints">
-              <span class="hint-tag">Hover card to see gold glows intensify</span>
+              <span class="hint-tag">Hover viewport to see gold glow effects</span>
             </div>
           </div>
 
@@ -210,72 +405,97 @@
           </div>
         </section>
 
-        <!-- 2. Skeuomorphism -->
+        <!-- 3. Skeuomorphism -->
         <section id="skeuomorphism" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">02 · Realistic Tactility</span>
+            <span class="style-badge">03 · Realistic Tactility</span>
             <h2>Skeuomorphism</h2>
             <p class="section-desc">Mimicking physical objects and real-world materials (leather, metal, glass, stitches, wood) through lighting, textures, bevels, and shadows. Highly intuitive, rich, and nostalgic.</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-skeuomorphic-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="skeu-wallet">
-              <div class="skeu-back-stitch"></div>
-              
-              <div class="skeu-card card-visa" id="skeu-card-visa">
-                <div class="skeu-card-chip"></div>
-                <div class="skeu-card-logo">✦ PREMIUM</div>
-                <div class="skeu-card-number">•••• •••• •••• 9823</div>
-                <div class="skeu-card-holder">ATA DESIGN</div>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">analog-planner.net/wallet</div>
               </div>
               
-              <div class="skeu-card card-stripe" id="skeu-card-stripe">
-                <div class="skeu-card-logo">stripe</div>
-                <div class="skeu-card-number">•••• •••• •••• 4022</div>
-                <div class="skeu-card-holder">ATA DEV</div>
-              </div>
+              <div class="mock-website skeu-mock-site">
+                <!-- Mock Header (Notebook Tabs) -->
+                <header class="mock-header skeu-header">
+                  <div class="skeu-tabs">
+                    <span class="skeu-tab active">Wallet</span>
+                    <span class="skeu-tab">Diary</span>
+                    <span class="skeu-tab">Gain</span>
+                  </div>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main skeu-main">
+                  <div class="skeu-wallet">
+                    <div class="skeu-back-stitch"></div>
+                    
+                    <div class="skeu-card card-visa" id="skeu-card-visa">
+                      <div class="skeu-card-chip"></div>
+                      <div class="skeu-card-logo">✦ PREMIUM</div>
+                      <div class="skeu-card-number">•••• •••• •••• 9823</div>
+                    </div>
+                    
+                    <div class="skeu-card card-stripe" id="skeu-card-stripe">
+                      <div class="skeu-card-logo">stripe</div>
+                      <div class="skeu-card-number">•••• •••• •••• 4022</div>
+                    </div>
 
-              <div class="skeu-card card-paypal" id="skeu-card-paypal">
-                <div class="skeu-card-logo">PayPal</div>
-                <div class="skeu-card-number">•••• •••• •••• 1054</div>
-                <div class="skeu-card-holder">ATA CORP</div>
-              </div>
+                    <div class="skeu-card card-paypal" id="skeu-card-paypal">
+                      <div class="skeu-card-logo">PayPal</div>
+                      <div class="skeu-card-number">•••• •••• •••• 1054</div>
+                    </div>
 
-              <div class="skeu-pocket">
-                <div class="skeu-pocket-stitch"></div>
-                <div class="skeu-pocket-inner-shadow"></div>
-                <div class="skeu-balance-area">
-                  <div class="skeu-balance-label">TOTAL BALANCE</div>
-                  <div class="skeu-balance-amount">$102,400</div>
-                  <div class="skeu-balance-sub">ATA INVESTMENT</div>
-                </div>
-                <div class="skeu-wallet-press"></div>
-              </div>
-            </div>
+                    <div class="skeu-pocket">
+                      <div class="skeu-pocket-stitch"></div>
+                      <div class="skeu-pocket-inner-shadow"></div>
+                      <div class="skeu-balance-area">
+                        <div class="skeu-balance-label">TOTAL BALANCE</div>
+                        <div class="skeu-balance-amount">$102,400</div>
+                      </div>
+                    </div>
+                  </div>
 
-            <div class="skeu-knob-panel">
-              <div class="skeu-screw screw-tl"></div>
-              <div class="skeu-screw screw-tr"></div>
-              <div class="skeu-screw screw-bl"></div>
-              <div class="skeu-screw screw-br"></div>
-              
-              <div class="skeu-panel-title">VOLUME CONTROL</div>
-              
-              <div class="skeu-knob-wrapper">
-                <div class="skeu-knob-tick-ring"></div>
-                <div class="skeu-knob" id="skeu-knob">
-                  <div class="skeu-knob-indicator"></div>
-                </div>
+                  <div class="skeu-knob-panel">
+                    <div class="skeu-screw screw-tl"></div>
+                    <div class="skeu-screw screw-tr"></div>
+                    <div class="skeu-screw screw-bl"></div>
+                    <div class="skeu-screw screw-br"></div>
+                    
+                    <div class="skeu-panel-title">GAIN</div>
+                    
+                    <div class="skeu-knob-wrapper">
+                      <div class="skeu-knob" id="skeu-knob">
+                        <div class="skeu-knob-indicator"></div>
+                      </div>
+                    </div>
+                    <div class="skeu-knob-reading"><span id="skeu-gain-val">50%</span></div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer skeu-footer">
+                  <div class="skeu-rings">
+                    <span class="ring"></span>
+                    <span class="ring"></span>
+                    <span class="ring"></span>
+                  </div>
+                </footer>
               </div>
-              <div class="skeu-knob-reading">GAIN: <span id="skeu-gain-val">50%</span></div>
             </div>
 
             <div class="sandbox-hints">
-              <span class="hint-tag">Tap the credit cards to pull them out</span>
-              <span class="hint-tag">Drag or click knob to adjust gain</span>
+              <span class="hint-tag">Tap credit cards to slide them up</span>
+              <span class="hint-tag">Click/drag knob to adjust gain levels</span>
             </div>
           </div>
 
@@ -385,10 +605,10 @@
           </div>
         </section>
 
-        <!-- 3. Y2K / Frutiger Aero -->
+        <!-- 4. Y2K / Frutiger Aero -->
         <section id="y2k-aero" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">03 · Glossy Water Droplets</span>
+            <span class="style-badge">04 · Glossy Water Droplets</span>
             <h2>Y2K / Frutiger Aero</h2>
             <p class="section-desc">The optimistic design language of the 2000s. Characterized by high-gloss glass buttons, sky and grass color sweeps, water bubble highlights, and volumetric glossy spheres.</p>
           </div>
@@ -397,22 +617,49 @@
           <div class="sandbox-container bg-y2k-demo">
             <div class="y2k-glossy-sphere"></div>
             
-            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
-            
-            <div class="y2k-card">
-              <div class="y2k-glass-header">
-                <span class="y2k-icon">💧</span>
-                <h4>Aero Player</h4>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">aero-player.com/mp3</div>
               </div>
-              <div class="y2k-glass-body">
-                <div class="y2k-glow-display">
-                  <span class="title">Oceanic Vista.mp3</span>
-                  <div class="tracker-bar"><div class="tracker-fill" style="width: 60%;"></div></div>
-                </div>
-              </div>
-              <div class="y2k-glass-footer">
-                <button class="y2k-circular-btn" id="y2k-btn-play">▶</button>
-                <button class="y2k-circular-btn" id="y2k-btn-bubble">🫧</button>
+              
+              <div class="mock-website y2k-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header y2k-header">
+                  <span class="y2k-logo-txt">💧 aero.OS</span>
+                  <nav class="mock-nav">
+                    <span class="active">Player</span>
+                    <span>Files</span>
+                    <span>Radio</span>
+                  </nav>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main y2k-main">
+                  <div class="y2k-card">
+                    <div class="y2k-glass-header">
+                      <span class="y2k-icon">🎵</span>
+                      <h4>Vista Player</h4>
+                    </div>
+                    <div class="y2k-glass-body">
+                      <div class="y2k-glow-display">
+                        <span class="title">Oceanic Vista.mp3</span>
+                        <div class="tracker-bar"><div class="tracker-fill" style="width: 60%;"></div></div>
+                      </div>
+                    </div>
+                    <div class="y2k-glass-footer">
+                      <button class="y2k-circular-btn" id="y2k-btn-play">▶</button>
+                      <button class="y2k-circular-btn" id="y2k-btn-bubble">🫧</button>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer y2k-footer">
+                  <span>Frutiger Ecosystems Inc. 2006</span>
+                </footer>
               </div>
             </div>
 
@@ -513,55 +760,74 @@
           </div>
         </section>
 
-        <!-- 4. Neomorphism -->
+        <!-- 5. Neomorphism -->
         <section id="neomorphism" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">04 · Soft Extrusion</span>
+            <span class="style-badge">05 · Soft Extrusion</span>
             <h2>Neomorphism</h2>
             <p class="section-desc">A soft, semi-realistic UI style where buttons and panels appear to be extruded from the background. Relies on dual-diagonal light and dark box-shadows matching the exact background tone.</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-neomorphic-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="neo-dashboard">
-              <div class="neo-card">
-                <div class="neo-card-header">
-                  <div class="neo-icon-btn btn-back"><span>←</span></div>
-                  <div class="neo-title">SOUND DECK</div>
-                  <div class="neo-icon-btn btn-settings"><span>⚙</span></div>
-                </div>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">smarthome.io/deck</div>
+              </div>
+              
+              <div class="mock-website neo-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header neo-header">
+                  <span class="neo-header-logo">⚙ smartHub</span>
+                  <nav class="mock-nav">
+                    <span>Power</span>
+                    <span class="active">Audio</span>
+                  </nav>
+                </header>
                 
-                <div class="neo-dial-section">
-                  <div class="neo-dial-outer">
-                    <div class="neo-dial" id="neo-volume-dial">
-                      <div class="neo-dial-dot"></div>
+                <!-- Mock Main -->
+                <main class="mock-main neo-main">
+                  <div class="neo-card">
+                    <div class="neo-dial-section">
+                      <div class="neo-dial-outer">
+                        <div class="neo-dial" id="neo-volume-dial">
+                          <div class="neo-dial-dot"></div>
+                        </div>
+                      </div>
+                      <div class="neo-status-text">VOLUME: <span id="neo-volume-val">60%</span></div>
+                    </div>
+                    
+                    <div class="neo-toggle-grid">
+                      <button class="neo-btn-action" id="neo-btn-power">
+                        <span class="power-glow"></span>
+                        <span>⚡ POWER</span>
+                      </button>
+                      <button class="neo-btn-action active" id="neo-btn-eq">
+                        <span>📊 EQ</span>
+                      </button>
+                    </div>
+
+                    <div class="neo-slider-wrapper">
+                      <div class="neo-slider-labels">
+                        <span>BASS BOOST</span>
+                        <span id="neo-slider-val">40%</span>
+                      </div>
+                      <div class="neo-slider-track" id="neo-slider-track">
+                        <div class="neo-slider-fill" style="width: 40%;"></div>
+                        <div class="neo-slider-thumb" style="left: 40%;"></div>
+                      </div>
                     </div>
                   </div>
-                  <div class="neo-status-text">DECK VOLUME: <span id="neo-volume-val">60%</span></div>
-                </div>
+                </main>
                 
-                <div class="neo-toggle-grid">
-                  <button class="neo-btn-action" id="neo-btn-power">
-                    <span class="power-glow"></span>
-                    <span class="icon">⚡</span> POWER
-                  </button>
-                  <button class="neo-btn-action active" id="neo-btn-eq">
-                    <span class="icon">📊</span> EQUALIZER
-                  </button>
-                </div>
-
-                <div class="neo-slider-wrapper">
-                  <div class="neo-slider-labels">
-                    <span>BASS BOOST</span>
-                    <span id="neo-slider-val">40%</span>
-                  </div>
-                  <div class="neo-slider-track" id="neo-slider-track">
-                    <div class="neo-slider-fill" style="width: 40%;"></div>
-                    <div class="neo-slider-thumb" style="left: 40%;"></div>
-                  </div>
-                </div>
+                <!-- Mock Footer -->
+                <footer class="mock-footer neo-footer">
+                  <span>smartHome OS 2026</span>
+                </footer>
               </div>
             </div>
 
@@ -657,53 +923,80 @@
           </div>
         </section>
 
-        <!-- 5. Claymorphism -->
+        <!-- 6. Claymorphism -->
         <section id="claymorphism" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">05 · Fluffy 3D Clay</span>
+            <span class="style-badge">06 · Fluffy 3D Clay</span>
             <h2>Claymorphism</h2>
             <p class="section-desc">Creates a soft, inflated clay-like 3D feel using rounded/oval shapes, pastel colors, soft outer drop-shadows, and heavy layered internal shadows (light on top, dark on bottom).</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-claymorphic-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="clay-card">
-              <div class="clay-avatar-container">
-                <div class="clay-avatar">
-                  <div class="clay-avatar-face">
-                    <div class="clay-eyes">
-                      <div class="eye"></div>
-                      <div class="eye"></div>
-                    </div>
-                    <div class="clay-smile"></div>
-                  </div>
-                </div>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">claybuddy.edu/lessons</div>
               </div>
               
-              <div class="clay-card-body">
-                <h3>CLAY BUDDY</h3>
-                <p>Hello! I am a soft 3D-style responsive component.</p>
-              </div>
-
-              <div class="clay-toggles">
-                <div class="clay-toggle-group">
-                  <span class="toggle-lbl">MUTE</span>
-                  <div class="clay-toggle" id="clay-toggle-mute">
-                    <div class="clay-toggle-thumb"></div>
-                  </div>
-                </div>
+              <div class="mock-website clay-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header clay-header">
+                  <span class="clay-logo">☁️ ClayBuddy</span>
+                  <nav class="mock-nav">
+                    <span class="active">Play</span>
+                    <span>Badges</span>
+                  </nav>
+                </header>
                 
-                <div class="clay-toggle-group">
-                  <span class="toggle-lbl">SHADOW</span>
-                  <div class="clay-toggle active" id="clay-toggle-shadow">
-                    <div class="clay-toggle-thumb"></div>
-                  </div>
-                </div>
-              </div>
+                <!-- Mock Main -->
+                <main class="mock-main clay-main">
+                  <div class="clay-card">
+                    <div class="clay-avatar-container">
+                      <div class="clay-avatar">
+                        <div class="clay-avatar-face">
+                          <div class="clay-eyes">
+                            <div class="eye"></div>
+                            <div class="eye"></div>
+                          </div>
+                          <div class="clay-smile"></div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="clay-card-body">
+                      <h3>CLAY BUDDY</h3>
+                      <p>Hello! I am a soft 3D-style responsive component.</p>
+                    </div>
 
-              <button class="clay-btn">HUG ME</button>
+                    <div class="clay-toggles">
+                      <div class="clay-toggle-group">
+                        <span class="toggle-lbl">MUTE</span>
+                        <div class="clay-toggle" id="clay-toggle-mute">
+                          <div class="clay-toggle-thumb"></div>
+                        </div>
+                      </div>
+                      
+                      <div class="clay-toggle-group">
+                        <span class="toggle-lbl">SHADOW</span>
+                        <div class="clay-toggle active" id="clay-toggle-shadow">
+                          <div class="clay-toggle-thumb"></div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button class="clay-btn">HUG ME</button>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer clay-footer">
+                  <span>Keep learning! © Clay Buddy</span>
+                </footer>
+              </div>
             </div>
 
             <div class="sandbox-hints">
@@ -800,42 +1093,70 @@
           </div>
         </section>
 
-        <!-- 6. Minimalism -->
+        <!-- 7. Minimalism -->
         <section id="minimalism" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">06 · Pure Layout</span>
+            <span class="style-badge">07 · Pure Layout</span>
             <h2>Minimalism</h2>
             <p class="section-desc">Focuses on content, grid consistency, high letter-spacing contrasts, and absolute lack of decorative shadow structures or gradient noise. Uses typography and borders to separate elements.</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-minimalist-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="min-article">
-              <div class="min-meta-row">
-                <span>ISSUE NO. 09</span>
-                <span>JULY 2026</span>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">minimal-zine.org/editorial</div>
               </div>
               
-              <h3 class="min-title">DESIGN REDUCED TO ESSENCE.</h3>
-              
-              <p class="min-lead">Functionalism dictates form. By discarding skeuomorphic simulations, glass overlays, and rounded buttons, we prioritize high-contrast typographic layouts and structural grid alignment.</p>
-              
-              <div class="min-metrics-row">
-                <div class="min-metric">
-                  <span class="num">0.00</span>
-                  <span class="lbl">DECORATIVE DEBT</span>
-                </div>
-                <div class="min-metric">
-                  <span class="num">100%</span>
-                  <span class="lbl">READABILITY SCORE</span>
-                </div>
-              </div>
+              <div class="mock-website min-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header min-header">
+                  <span class="min-logo">ESSENCE</span>
+                  <nav class="mock-nav">
+                    <span>Archive</span>
+                    <span>Issue</span>
+                    <span class="active">Read</span>
+                  </nav>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main min-main">
+                  <div class="min-article">
+                    <div class="min-meta-row">
+                      <span>ISSUE NO. 09</span>
+                      <span>JULY 2026</span>
+                    </div>
+                    
+                    <h3 class="min-title">DESIGN REDUCED TO ESSENCE.</h3>
+                    
+                    <p class="min-lead">By discarding skeuomorphic simulations, glass overlays, and rounded buttons, we prioritize high-contrast typographic layouts and structural grid alignment.</p>
+                    
+                    <div class="min-metrics-row">
+                      <div class="min-metric">
+                        <span class="num">0.00</span>
+                        <span class="lbl">DECORATIVE DEBT</span>
+                      </div>
+                      <div class="min-metric">
+                        <span class="num">100%</span>
+                        <span class="lbl">READABILITY SCORE</span>
+                      </div>
+                    </div>
 
-              <div class="min-action-row">
-                <button class="min-btn">READ JOURNAL</button>
-                <button class="min-btn btn-sec">SUBSCRIBE</button>
+                    <div class="min-action-row">
+                      <button class="min-btn">READ JOURNAL</button>
+                      <button class="min-btn btn-sec">SUBSCRIBE</button>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer min-footer">
+                  <span>All rights reserved. Vol 09.</span>
+                </footer>
               </div>
             </div>
 
@@ -935,65 +1256,87 @@
           </div>
         </section>
 
-        <!-- 7. Bento Grid -->
+        <!-- 8. Bento Grid -->
         <section id="bento-grid" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">07 · Modular Layout</span>
+            <span class="style-badge">08 · Modular Layout</span>
             <h2>Bento Grid</h2>
             <p class="section-desc">Inspired by Japanese Bento boxes, this style partitions screen space into varying-sized rectangular modules with distinct rounded corners, grouping widgets elegantly to maximize visual hierarchy.</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-bento-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="bento-grid-wrapper">
-              <div class="bento-item item-profile">
-                <div class="bento-profile-avatar">✦</div>
-                <div class="bento-profile-info">
-                  <h4>Chandler Bing</h4>
-                  <p>Lead Interface Engineer</p>
-                </div>
-                <div class="bento-status-pill">Active</div>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">bento-metrics.io/grid</div>
               </div>
+              
+              <div class="mock-website bento-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header bento-header">
+                  <span class="bento-logo-txt">📊 Grid.OS</span>
+                  <nav class="mock-nav">
+                    <span class="active">Metrics</span>
+                    <span>Logs</span>
+                  </nav>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main bento-main">
+                  <div class="bento-grid-wrapper">
+                    <div class="bento-item item-profile">
+                      <div class="bento-profile-avatar">✦</div>
+                      <div class="bento-profile-info">
+                        <h4>Chandler Bing</h4>
+                        <p>Lead Engineer</p>
+                      </div>
+                      <div class="bento-status-pill">Active</div>
+                    </div>
 
-              <div class="bento-item item-stat">
-                <div class="bento-stat-val">76%</div>
-                <div class="bento-stat-lbl">System Perf</div>
-                <div class="bento-stat-bar-outer"><div class="bento-stat-bar-inner" style="width: 76%;"></div></div>
-              </div>
+                    <div class="bento-item item-stat">
+                      <div class="bento-stat-val">76%</div>
+                      <div class="bento-stat-lbl">System Perf</div>
+                      <div class="bento-stat-bar-outer"><div class="bento-stat-bar-inner" style="width: 76%;"></div></div>
+                    </div>
 
-              <div class="bento-item item-switch">
-                <div class="bento-switch-row">
-                  <span>Server Status</span>
-                  <div class="bento-switch" id="bento-switch-server"><div class="thumb"></div></div>
-                </div>
-                <div class="bento-switch-row">
-                  <span>Cache Sync</span>
-                  <div class="bento-switch active" id="bento-switch-cache"><div class="thumb"></div></div>
-                </div>
-              </div>
+                    <div class="bento-item item-switch">
+                      <div class="bento-switch-row">
+                        <span>Server</span>
+                        <div class="bento-switch" id="bento-switch-server"><div class="thumb"></div></div>
+                      </div>
+                      <div class="bento-switch-row">
+                        <span>Sync</span>
+                        <div class="bento-switch active" id="bento-switch-cache"><div class="thumb"></div></div>
+                      </div>
+                    </div>
 
-              <div class="bento-item item-wide">
-                <div class="wide-header">
-                  <span>📅 DAILY AGENDA</span>
-                  <span>JULY 1</span>
-                </div>
-                <ul class="wide-agenda-list">
-                  <li class="done">Sync with ATA designers <span class="time">10:00 AM</span></li>
-                  <li>Build Claymorphic components <span class="time">12:30 PM</span></li>
-                  <li>Perform spatial transforms <span class="time">03:00 PM</span></li>
-                </ul>
-              </div>
+                    <div class="bento-item item-wide">
+                      <ul class="wide-agenda-list">
+                        <li class="done">Sync designers <span class="time">10AM</span></li>
+                        <li>Build clay components <span class="time">12PM</span></li>
+                      </ul>
+                    </div>
 
-              <div class="bento-item item-small item-pink">
-                <span class="bento-sub-icon">💡</span>
-                <span class="bento-sub-lbl">Core Design</span>
-              </div>
+                    <div class="bento-item item-small item-pink">
+                      <span class="bento-sub-icon">💡</span>
+                      <span class="bento-sub-lbl">Design</span>
+                    </div>
 
-              <div class="bento-item item-small item-cyan">
-                <span class="bento-sub-icon">🚀</span>
-                <span class="bento-sub-lbl">Export CSS</span>
+                    <div class="bento-item item-small item-cyan">
+                      <span class="bento-sub-icon">🚀</span>
+                      <span class="bento-sub-lbl">Export</span>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer bento-footer">
+                  <span>Server Health Online</span>
+                </footer>
               </div>
             </div>
 
@@ -1098,45 +1441,65 @@
           </div>
         </section>
 
-        <!-- 8. Material You -->
+        <!-- 9. Material You -->
         <section id="material-you" class="style-section">
           <div class="section-meta">
-            <span class="style-badge">08 · Monet Tonal Surfaces</span>
+            <span class="style-badge">09 · Monet Tonal Surfaces</span>
             <h2>Material You</h2>
             <p class="section-desc">Inspired by Android's modern visual language. Features dynamic color-extraction tone mapping, organic pill buttons, flat card layouts, and subtle, soft surface elevations.</p>
           </div>
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-material-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="material-card">
-              <div class="material-header">
-                <h3>Inbox</h3>
-                <span class="material-avatar">A</span>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">material.google.com/inbox</div>
               </div>
               
-              <div class="material-list">
-                <div class="material-list-item active">
-                  <div class="item-icon">📬</div>
-                  <div class="item-text">
-                    <h4>Dynamic Theme</h4>
-                    <p>Monet color harmony matches wallpaper...</p>
-                  </div>
-                </div>
+              <div class="mock-website material-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header material-header">
+                  <span class="icon-menu">☰</span>
+                  <h3>Inbox</h3>
+                  <span class="material-avatar">A</span>
+                </header>
                 
-                <div class="material-list-item">
-                  <div class="item-icon">🎨</div>
-                  <div class="item-text">
-                    <h4>Material Design 3</h4>
-                    <p>Clean tonal surfaces and adaptive shapes...</p>
+                <!-- Mock Main -->
+                <main class="mock-main material-main">
+                  <div class="material-card">
+                    <div class="material-list">
+                      <div class="material-list-item active">
+                        <div class="item-icon">📬</div>
+                        <div class="item-text">
+                          <h4>Dynamic Theme</h4>
+                          <p>Monet color harmony matches wallpaper...</p>
+                        </div>
+                      </div>
+                      
+                      <div class="material-list-item">
+                        <div class="item-icon">🎨</div>
+                        <div class="item-text">
+                          <h4>Material Design 3</h4>
+                          <p>Clean tonal surfaces and adaptive shapes...</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <button class="material-fab" id="material-fab-compose">
+                      <span>✏️</span>
+                    </button>
                   </div>
-                </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer material-footer">
+                  <span>Inbox sync: 2 min ago</span>
+                </footer>
               </div>
-              
-              <button class="material-fab" id="material-fab-compose">
-                <span>✏️</span>
-              </button>
             </div>
 
             <div class="sandbox-hints">
@@ -1235,149 +1598,6 @@
           </div>
         </section>
 
-        <!-- 9. Glassmorphism -->
-        <section id="glassmorphism" class="style-section">
-          <div class="section-meta">
-            <span class="style-badge">09 · Translucent Frosted Glass</span>
-            <h2>Glassmorphism</h2>
-            <p class="section-desc">Characterized by background blur effects, semi-transparent frosted card styles, borders mimicking glass refractions, and vibrant abstract background shapes that reveal depth.</p>
-          </div>
-
-          <!-- Interactive Sandbox -->
-          <div class="sandbox-container bg-glassmorphic-demo">
-            <div class="glass-orb blob-1"></div>
-            <div class="glass-orb blob-2"></div>
-            <div class="glass-orb blob-3"></div>
-
-            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
-            
-            <div class="glass-card">
-              <div class="glass-chip-row">
-                <span class="glass-logo">✦ INFINITE</span>
-                <span class="glass-card-type">WORLD ACCESS</span>
-              </div>
-              
-              <div class="glass-card-body">
-                <div class="glass-balance-label">AVAILABLE LIMIT</div>
-                <div class="glass-balance-amount">$84,320.00</div>
-              </div>
-              
-              <div class="glass-card-footer">
-                <div class="glass-holder">CHANDLER BING</div>
-                <div class="glass-expires">EXP 12/29</div>
-              </div>
-
-              <button class="glass-btn">
-                <span>View Transactions</span>
-                <span class="arrow">→</span>
-              </button>
-            </div>
-
-            <div class="glass-stats-panel">
-              <div class="stat-item">
-                <span class="stat-dot green"></span>
-                <span class="stat-title">Staking APY</span>
-                <span class="stat-value">12.4%</span>
-              </div>
-              <div class="stat-item">
-                <span class="stat-dot blue"></span>
-                <span class="stat-title">Active Pools</span>
-                <span class="stat-value">18</span>
-              </div>
-            </div>
-
-            <div class="sandbox-hints" style="z-index: 10;">
-              <span class="hint-tag">Hover card to see dynamic lighting shifts</span>
-            </div>
-          </div>
-
-          <!-- Documentation, Swatches & Prompts -->
-          <div class="details-grid">
-            <div class="details-card">
-              <h3>Design Parameters & Tokens</h3>
-              <ul class="details-list">
-                <li><strong>Backdrop Blur:</strong> Uses `backdrop-filter: blur(15px-30px)` to diffuse background colors.</li>
-                <li><strong>Translucent Fills:</strong> Card fill is extremely light white e.g., `rgba(255, 255, 255, 0.07)`.</li>
-                <li><strong>Highlight Borders:</strong> A thin semi-transparent border mimics sharp glass light cuts.</li>
-                <li><strong>Vibrancy:</strong> Deep colorful shapes behind the glass give contrast.</li>
-              </ul>
-              
-              <h4 class="mt-1">Color Palette (Click to Copy)</h4>
-              <div class="color-palette">
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: rgba(255, 255, 255, 0.08);" data-hex="rgba(255,255,255,0.08)"></div>
-                  <span class="swatch-label">White 8%</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #FF2E93;" data-hex="#FF2E93"></div>
-                  <span class="swatch-label">#FF2E93</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #05C1FF;" data-hex="#05C1FF"></div>
-                  <span class="swatch-label">#05C1FF</span>
-                </div>
-                <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #FFB703;" data-hex="#FFB703"></div>
-                  <span class="swatch-label">#FFB703</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="details-card">
-              <h3>AI Theme Transformation Recipe</h3>
-              <div class="prompt-box">
-                <pre class="prompt-text">[THEME SPECIFICATION RECIPE]
-- THEME NAME: Glassmorphism
-- AESTHETICS & MOOD: Translucent, floating, glowing, futuristic, deep.
-- PALETTE:
-  - Base Background: Deep purple-blue dark gradient #0F0C1B to #080614
-  - Panel Background: Frosted white semi-transparent rgba(255,255,255,0.06)
-  - Primary Text: Pure white #FFFFFF
-  - Accent / Focus: Hot pink #FF2E93 and cyan #05C1FF
-- TYPOGRAPHY:
-  - Headings: Geometric sans-serif, bold, tight letter-spacing
-  - Body Text: Clean sans-serif, readable contrast
-- CONTAINERS & CARDS:
-  - Borders: 1px solid rgba(255,255,255,0.125) mimicking sharp light cuts
-  - Shadow: 0 15px 35px rgba(0, 0, 0, 0.4)
-  - Radii: 24px
-- HEADER & FOOTER:
-  - Height & Padding: Padded, floating glass panes
-  - Borders: Thin refractive edge line divider
-- INTERACTIVE ELEMENTS:
-  - Buttons: Frosted background fill with light blur, glowing hover scales
-  - Form Inputs: Translucent glass background with bright border on focus
-  - Toggles & Sliders: Translucent track, glowing neon thumb
-- SPECIFIC GRAPHIC EFFECTS:
-  - backdrop-filter: blur(20px) saturate(180%);
-  - Large colorful drifting glowing blobs behind active glass panels</pre>
-                <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
-              </div>
-            </div>
-          </div>
-
-          <!-- Code Inspector -->
-          <div class="code-inspector">
-            <div class="inspector-tabs">
-              <button class="tab-btn active" data-tab="css">CSS Variables & Styles</button>
-              <button class="tab-btn" data-tab="html">HTML Component Structure</button>
-              <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
-            </div>
-            <div class="inspector-content">
-              <pre class="tab-panel active" id="code-glassmorphism-css"><code>/* Glassmorphism CSS Recipe */
-.glass-card {
-  background: rgba(255, 255, 255, 0.06);
-  backdrop-filter: blur(20px) saturate(180%);
-  border: 1px solid rgba(255, 255, 255, 0.125);
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
-}</code></pre>
-              <pre class="tab-panel" id="code-glassmorphism-html"><code>&lt;div class="glass-card"&gt;
-  &lt;span class="glass-logo"&gt;INFINITE&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-            </div>
-          </div>
-        </section>
-
         <!-- 10. Liquid Glass -->
         <section id="liquid-glass" class="style-section">
           <div class="section-meta">
@@ -1389,20 +1609,47 @@
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-liquid-glass-demo">
             <div class="liquid-bg-glow"></div>
-            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
             
-            <div class="liquid-glass-wrapper">
-              <div class="liquid-blob" id="liquid-blob-1">
-                <div class="liquid-content">
-                  <div class="liquid-brand">LIQUID</div>
-                  <div class="liquid-pulse"></div>
-                  <div class="liquid-percentage">89.4%</div>
-                  <div class="liquid-label">ORGANIC CONGRUENCE</div>
-                </div>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">liquid-ex.net/trade</div>
+              </div>
+              
+              <div class="mock-website liquid-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header liquid-header">
+                  <span class="liquid-logo-txt">✴ liquid.ex</span>
+                  <nav class="mock-nav">
+                    <span class="active">Trade</span>
+                    <span>Markets</span>
+                  </nav>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main liquid-main">
+                  <div class="liquid-glass-wrapper">
+                    <div class="liquid-blob" id="liquid-blob-1">
+                      <div class="liquid-content">
+                        <div class="liquid-brand">LIQUID IDX</div>
+                        <div class="liquid-pulse"></div>
+                        <div class="liquid-percentage">89.4%</div>
+                        <div class="liquid-label">GROWTH INDEX</div>
+                      </div>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer liquid-footer">
+                  <span>Liquid Exchange Protocol</span>
+                </footer>
               </div>
             </div>
 
-            <div class="sandbox-hints" style="z-index: 10;">
+            <div class="sandbox-hints">
               <span class="hint-tag">Continuous fluid morphing animation</span>
             </div>
           </div>
@@ -1508,40 +1755,55 @@
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-spatial-demo">
             <div class="spatial-bg-photo"></div>
-            <div class="sandbox-label" style="z-index: 100;">Live Interactive Render</div>
             
-            <div class="spatial-scene">
-              <div class="spatial-panel" id="spatial-panel">
-                <div class="spatial-glass-sheen"></div>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">spatial-os.env/settings</div>
+              </div>
+              
+              <div class="mock-website spatial-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header spatial-header">
+                  <span class="spatial-logo-txt">✦ spatial.OS</span>
+                  <span class="spatial-battery">94%</span>
+                </header>
                 
-                <div class="spatial-header">
-                  <div class="header-logo">✦ spatial.OS</div>
-                  <div class="header-battery">94%</div>
-                </div>
-
-                <div class="spatial-body">
-                  <h3>ENVIRONMENT CONTROL</h3>
-                  <p>Translucent obsidian panels blend into the room's backdrop. Try moving your cursor over the panel to tilt it in three-dimensional space.</p>
-                  
-                  <div class="spatial-controls-grid">
-                    <div class="spatial-control-btn active">
-                      <span>🌲</span>
-                      <span class="label">Forest</span>
-                    </div>
-                    <div class="spatial-control-btn">
-                      <span>🏔</span>
-                      <span class="label">Mountain</span>
-                    </div>
-                    <div class="spatial-control-btn">
-                      <span>🌌</span>
-                      <span class="label">Cosmos</span>
+                <!-- Mock Main -->
+                <main class="mock-main spatial-main">
+                  <div class="spatial-scene">
+                    <div class="spatial-panel" id="spatial-panel">
+                      <div class="spatial-glass-sheen"></div>
+                      
+                      <div class="spatial-body">
+                        <h3>ENVIRONMENT</h3>
+                        <p>Obsidian panels blend into the room's backdrop. Hover to tilt in 3D space.</p>
+                        
+                        <div class="spatial-controls-grid">
+                          <div class="spatial-control-btn active">
+                            <span>🌲</span>
+                            <span class="label">Forest</span>
+                          </div>
+                          <div class="spatial-control-btn">
+                            <span>🏔</span>
+                            <span class="label">Mountain</span>
+                          </div>
+                          <div class="spatial-control-btn">
+                            <span>🌌</span>
+                            <span class="label">Cosmos</span>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="spatial-footer">
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer spatial-footer">
                   <span class="spatial-nav-indicator"></span>
-                </div>
+                </footer>
               </div>
             </div>
 
@@ -1652,27 +1914,52 @@
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-brutalist-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="brut-card">
-              <div class="brut-header">
-                <span class="brut-tag">HTML5 SNIPPET</span>
-                <span class="brut-badge">HOT 🔥</span>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">rawzine.dev/issue-9</div>
               </div>
               
-              <h3 class="brut-title">RAW COMPONENT CODE</h3>
-              
-              <p class="brut-desc">We reject gradient blurs and glass effects. Here, shadows are solid black rectangles offset at precise angles. Fonts are raw mono.</p>
-              
-              <div class="brut-input-row">
-                <input type="text" class="brut-input" placeholder="enter email address">
-                <button class="brut-btn btn-accent" id="brut-btn-submit">SUBMIT</button>
-              </div>
+              <div class="mock-website brut-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header brut-header">
+                  <span class="brut-logo">[ RAW ZINE ]</span>
+                  <nav class="mock-nav">
+                    <span>CSS</span>
+                    <span>HTML</span>
+                    <span class="active">DEV</span>
+                  </nav>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main brut-main">
+                  <div class="brut-card">
+                    <div class="brut-header">
+                      <span class="brut-tag">RAW HTML</span>
+                      <span class="brut-badge">HOT 🔥</span>
+                    </div>
+                    
+                    <h3 class="brut-title">RAW CODE</h2>
+                    
+                    <div class="brut-input-row">
+                      <input type="text" class="brut-input" placeholder="enter email address">
+                      <button class="brut-btn" id="brut-btn-submit">SUBMIT</button>
+                    </div>
 
-              <div class="brut-pill-row">
-                <span class="brut-pill select-cyan">#webdev</span>
-                <span class="brut-pill select-purple">#brutalism</span>
-                <span class="brut-pill select-orange">#css</span>
+                    <div class="brut-pill-row">
+                      <span class="brut-pill select-cyan">#dev</span>
+                      <span class="brut-pill select-orange">#css</span>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer brut-footer">
+                  <span>RAW ZINE INC. NO COOKIES.</span>
+                </footer>
               </div>
             </div>
 
@@ -1781,23 +2068,51 @@
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-maximalist-demo">
-            <div class="sandbox-label">Live Interactive Render</div>
             
-            <div class="max-collage">
-              <div class="max-badge-rotate">LIMITLESS</div>
-              
-              <div class="max-box-gradient">
-                <h3>CREATIVE OVERFLOW!</h3>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">creative-chaos.shop/stickers</div>
               </div>
               
-              <div class="max-sticker-1">★ 99% RAW</div>
-              <div class="max-sticker-2">CLICK IT!</div>
-              
-              <p class="max-paragraph">Break standard grid limits. Overlapping text, diagonal badges, saturated neon fills, and aggressive patterns combined together.</p>
+              <div class="mock-website max-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header max-header">
+                  <span class="max-logo-txt">★ CHAOS</span>
+                  <nav class="mock-nav">
+                    <span class="active">Shop</span>
+                    <span>News</span>
+                    <span>Join</span>
+                  </nav>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main max-main">
+                  <div class="max-collage">
+                    <div class="max-badge-rotate">99% RAW</div>
+                    
+                    <div class="max-box-gradient">
+                      <h3>CREATIVE INFLUX</h3>
+                    </div>
+                    
+                    <div class="max-sticker-1">★ GLOW</div>
+                    <div class="max-sticker-2">CLICK IT!</div>
+                    
+                    <p class="max-paragraph">Overlapping text, diagonal badges, saturated neon fills, and patterns.</p>
 
-              <div class="max-footer-btn-row">
-                <button class="max-btn max-btn-pink">DISCOVER</button>
-                <button class="max-btn max-btn-green">JOIN CLUB</button>
+                    <div class="max-footer-btn-row">
+                      <button class="max-btn max-btn-pink">DISCOVER</button>
+                      <button class="max-btn max-btn-green">JOIN</button>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer max-footer">
+                  <span>!!! CHAOS FOREVER !!!</span>
+                </footer>
               </div>
             </div>
 
@@ -1907,26 +2222,44 @@
           <div class="sandbox-container bg-cyber-demo">
             <div class="cyber-scanline"></div>
             <div class="cyber-grid-bg"></div>
-            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
             
-            <div class="cyber-card">
-              <div class="cyber-header">
-                <span class="cyber-status-pill">SYS.ONLINE</span>
-                <span class="cyber-serial">#89-0XF</span>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">rebel.net/core-system</div>
               </div>
-              <div class="cyber-body">
-                <div class="cyber-glitch-text" data-text="CYBER.NET">CYBER.NET</div>
-                <p class="cyber-p">REBEL TECH CORE ACTIVATED</p>
-                <div class="cyber-stat-bar-outer">
-                  <div class="cyber-stat-bar-inner" style="width: 82%;"></div>
-                </div>
-              </div>
-              <div class="cyber-footer">
-                <button class="cyber-btn" id="cyber-btn-override">OVERRIDE</button>
+              
+              <div class="mock-website cyber-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header cyber-header">
+                  <span class="cyber-logo-txt">// REBEL.NET</span>
+                  <span class="cyber-serial">SYS.ONLINE</span>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main cyber-main">
+                  <div class="cyber-card">
+                    <div class="cyber-glitch-text" data-text="CYBER.NET">CYBER.NET</div>
+                    <p class="cyber-p">REBEL TECH ACTIVATED</p>
+                    <div class="cyber-stat-bar-outer">
+                      <div class="cyber-stat-bar-inner" style="width: 82%;"></div>
+                    </div>
+                    <div class="cyber-footer">
+                      <button class="cyber-btn" id="cyber-btn-override">OVERRIDE</button>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer cyber-footer">
+                  <span>// ACCESS POINT 09B //</span>
+                </footer>
               </div>
             </div>
 
-            <div class="sandbox-hints" style="z-index: 10;">
+            <div class="sandbox-hints">
               <span class="hint-tag">Click override to trigger sound card alert</span>
             </div>
           </div>
@@ -2033,38 +2366,59 @@
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-hud-demo">
-            <div class="sandbox-label" style="z-index: 10;">Live Interactive Render</div>
             
-            <div class="hud-card">
-              <div class="hud-telemetry-border">
-                <div class="corner-tr"></div>
-                <div class="corner-tl"></div>
-                <div class="corner-br"></div>
-                <div class="corner-bl"></div>
+            <div class="browser-mockup">
+              <div class="browser-bar">
+                <span class="browser-dot red"></span>
+                <span class="browser-dot yellow"></span>
+                <span class="browser-dot green"></span>
+                <div class="browser-address">hud-tactical.sys/scanner</div>
               </div>
-              <div class="hud-header">
-                <span class="hud-target-marker">⌖</span>
-                <h4>SECTOR SCANNER</h4>
-              </div>
-              <div class="hud-body">
-                <div class="hud-crosshair-area">
-                  <div class="crosshair-ring"></div>
-                  <div class="crosshair-axis-x"></div>
-                  <div class="crosshair-axis-y"></div>
-                  <div class="crosshair-scanner-line" id="hud-scan-line"></div>
-                  <span class="target-locked-text">TARGET IN RANGE</span>
-                </div>
-                <div class="hud-telemetry-row">
-                  <span>ALT: 4,092M</span>
-                  <span>VEL: MACH 1.8</span>
-                </div>
-              </div>
-              <div class="hud-footer">
-                <button class="hud-btn" id="hud-btn-lock">ENGAGE TARGET</button>
+              
+              <div class="mock-website hud-mock-site">
+                <!-- Mock Header -->
+                <header class="mock-header hud-header">
+                  <span class="hud-logo-txt">⌖ SECTOR SCANNER</span>
+                  <span class="hud-serial">GRID.72B</span>
+                </header>
+                
+                <!-- Mock Main -->
+                <main class="mock-main hud-main">
+                  <div class="hud-card">
+                    <div class="hud-telemetry-border">
+                      <div class="corner-tr"></div>
+                      <div class="corner-tl"></div>
+                      <div class="corner-br"></div>
+                      <div class="corner-bl"></div>
+                    </div>
+                    
+                    <div class="hud-crosshair-area">
+                      <div class="crosshair-ring"></div>
+                      <div class="crosshair-axis-x"></div>
+                      <div class="crosshair-axis-y"></div>
+                      <div class="hud-scanner-line" id="hud-scan-line"></div>
+                      <span class="target-locked-text">TARGET IN RANGE</span>
+                    </div>
+                    
+                    <div class="hud-telemetry-row">
+                      <span>ALT: 4,092M</span>
+                      <span>VEL: MACH 1.8</span>
+                    </div>
+                    
+                    <div class="hud-footer-btn">
+                      <button class="hud-btn" id="hud-btn-lock">ENGAGE TARGET</button>
+                    </div>
+                  </div>
+                </main>
+                
+                <!-- Mock Footer -->
+                <footer class="mock-footer hud-footer">
+                  <span>SYSTEM STATUS: ENGAGED</span>
+                </footer>
               </div>
             </div>
 
-            <div class="sandbox-hints" style="z-index: 10;">
+            <div class="sandbox-hints">
               <span class="hint-tag">Hover card to see scanline speeds double</span>
             </div>
           </div>
@@ -2166,27 +2520,8 @@
 
       </div>
 
-      <!-- Quick Adaptation reference section -->
+      <!-- Footer section -->
       <footer class="app-adapt-footer">
-        <h3>How to adapt these styles to your project</h3>
-        <p>To use these designs in other web applications, follow these three steps:</p>
-        <div class="steps-grid">
-          <div class="step-card">
-            <span class="step-num">1</span>
-            <h4>Import Fonts & Frameworks</h4>
-            <p>Make sure to include appropriate Google Fonts (e.g. <code>Outfit</code>, <code>JetBrains Mono</code>) in your index.html.</p>
-          </div>
-          <div class="step-card">
-            <span class="step-num">2</span>
-            <h4>Copy Variables & Mixins</h4>
-            <p>Copy the custom CSS tokens (under variables) into your global CSS sheets or Tailwind config.</p>
-          </div>
-          <div class="step-card">
-            <span class="step-num">3</span>
-            <h4>Recreate the Markup</h4>
-            <p>Paste the component layout HTML structures into your files and apply the corresponding CSS classes.</p>
-          </div>
-        </div>
         <div class="legal">
           <p>© 2026 UI Style Archive. Prepared by Antigravity pair-programming subagent. All assets are self-contained SVGs & CSS recipes.</p>
         </div>

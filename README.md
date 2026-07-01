@@ -3,15 +3,15 @@
 An interactive open-source developer codebook and style catalog showcasing **15 major UI design trends** in modern web history. This project provides live HTML/CSS render sandboxes, copy-pasteable styling scripts, color palettes, and optimized **AI Theme Transformation Recipes** for each trend.
 
 ## 🌟 Included Design Trends
-1. **Art Deco** — Luxury geometric lines overlaying jet-black marble stone backgrounds (1920s Roots).
-2. **Skeuomorphism** — Realistic textures (leather, metal), stitching, bevels, and physical dials (Early Mobile Bridge).
-3. **Y2K / Frutiger Aero** — Optimistic glossy bubbles, water reflections, and sky/grass gradients (Glossy Tech Optimism).
-4. **Neomorphism** — Soft extruded plastic panels using double box-shadow offset tokens (Minimal Skeuomorphic Hybrid).
-5. **Claymorphism** — Cute, fluffy 3D-inflated clay components using pastels and double inner shadows (Volumetric Cartoon).
-6. **Minimalism** — Content-first layout prioritizing grid alignment and high-contrast typography (The Purist Standard).
-7. **Bento Grid** — Grid layout partitioning visual data cleanly into rounded card containers (Modular Organizer).
-8. **Material You** — Google's organic dynamic color sheets with circular floating buttons (Organic Adaptive flat).
-9. **Glassmorphism** — Frosted glass refractions over colorful drifting light blobs (Translucent depth standard).
+1. **Glassmorphism** — Frosted glass refractions over colorful drifting light blobs (Translucent depth standard).
+2. **Art Deco** — Luxury geometric lines overlaying jet-black marble backgrounds (1920s Roots).
+3. **Skeuomorphism** — Realistic textures (leather, metal), stitching, bevels, and physical dials (Early Mobile Bridge).
+4. **Y2K / Frutiger Aero** — Optimistic glossy bubbles, water reflections, and sky/grass gradients (Glossy Tech Optimism).
+5. **Neomorphism** — Soft extruded plastic panels using double box-shadow offset tokens (Minimal Skeuomorphic Hybrid).
+6. **Claymorphism** — Cute, fluffy 3D-inflated clay components using pastels and double inner shadows (Volumetric Cartoon).
+7. **Minimalism** — Content-first layout prioritizing grid alignment and high-contrast typography (The Purist Standard).
+8. **Bento Grid** — Grid layout partitioning visual data cleanly into rounded card containers (Modular Organizer).
+9. **Material You** — Google's organic dynamic color sheets with circular floating buttons (Organic Adaptive flat).
 10. **Liquid Glass** — Continuous keyframe morphs of glass-frosted blobs simulating fluid refraction (Organic liquid morphs).
 11. **Spatial UI** — Pass-through dark obsidian panels that tilt in 3D perspective to track mouse movements (AR/visionOS volumetric future).
 12. **Brutalism** — High-contrast flat yellow panels with thick solid borders and hard offset shadows (Raw reaction outlines).

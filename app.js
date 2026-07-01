@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('.style-section');
 
   function showSectionByHash(hash) {
-    if (!hash) hash = '#art-deco';
+    if (!hash) hash = '#glassmorphism';
     
     let activeLink = document.querySelector(`.nav-item[href="${hash}"]`);
     if (!activeLink) return;
