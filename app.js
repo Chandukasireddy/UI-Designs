@@ -267,36 +267,17 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 
-  // --- 04. CLAYMORPHISM SANDBOX ---
-  const clayToggleMute = document.getElementById('clay-toggle-mute');
-  const clayToggleShadow = document.getElementById('clay-toggle-shadow');
-  const clayCard = document.querySelector('.clay-card');
-  const clayAvatar = document.querySelector('.clay-avatar');
-
-  clayToggleMute.addEventListener('click', () => {
-    clayToggleMute.classList.toggle('active');
-    showToast(clayToggleMute.classList.contains('active') ? 'Audio muted' : 'Audio active');
-  });
-
-  clayToggleShadow.addEventListener('click', () => {
-    clayToggleShadow.classList.toggle('active');
-    if (clayToggleShadow.classList.contains('active')) {
-      clayCard.style.boxShadow = '0 20px 40px rgba(163, 216, 244, 0.35), inset 8px 8px 16px #ffffff, inset -8px -8px 16px rgba(163, 216, 244, 0.4)';
-      clayAvatar.style.boxShadow = '0 10px 20px rgba(163, 216, 244, 0.5), inset 6px 6px 12px #ffffff, inset -6px -6px 12px rgba(0, 0, 0, 0.12)';
-    } else {
-      clayCard.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.05), inset 0px 0px 0px #fff';
-      clayAvatar.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.08)';
-    }
-  });
-
-  const clayBtn = document.querySelector('.clay-btn');
-  clayBtn.addEventListener('click', () => {
-    clayCard.style.transform = 'scale(0.92) rotate(2deg)';
-    showToast('Aww! Thanks for the hug!');
-    setTimeout(() => {
-      clayCard.style.transform = 'scale(1) rotate(0deg)';
-    }, 250);
-  });
+  // --- 06. CLAYMORPHISM SANDBOX ---
+  const clayBtnAdd = document.getElementById('clay-btn-add');
+  if (clayBtnAdd) {
+    clayBtnAdd.addEventListener('click', () => {
+      clayBtnAdd.style.transform = 'scale(0.8)';
+      showToast('Dynamic Plan Added!');
+      setTimeout(() => {
+        clayBtnAdd.style.transform = 'scale(1)';
+      }, 150);
+    });
+  }
 
 
   // --- 09. BENTO GRID SANDBOX ---

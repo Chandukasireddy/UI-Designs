@@ -933,62 +933,66 @@
 
           <!-- Interactive Sandbox -->
           <div class="sandbox-container bg-claymorphic-demo">
-            
+            <div class="clay-sphere sphere-1"></div>
+            <div class="clay-sphere sphere-2"></div>
+            <div class="clay-sphere sphere-3"></div>
+
             <div class="browser-mockup">
               <div class="browser-bar">
                 <span class="browser-dot red"></span>
                 <span class="browser-dot yellow"></span>
                 <span class="browser-dot green"></span>
-                <div class="browser-address">claybuddy.edu/lessons</div>
+                <div class="browser-address">claytask.app/home</div>
               </div>
               
               <div class="mock-website clay-mock-site">
                 <!-- Mock Header -->
                 <header class="mock-header clay-header">
-                  <span class="clay-logo">☁️ ClayBuddy</span>
-                  <nav class="mock-nav">
-                    <span class="active">Play</span>
-                    <span>Badges</span>
-                  </nav>
+                  <span class="clay-logo">☁️ clay.OS</span>
+                  <div class="clay-user-tag">
+                    <span class="avatar">🧑‍🚀</span>
+                    <span class="name">P. Parker</span>
+                  </div>
                 </header>
                 
                 <!-- Mock Main -->
                 <main class="mock-main clay-main">
-                  <div class="clay-card">
-                    <div class="clay-avatar-container">
-                      <div class="clay-avatar">
-                        <div class="clay-avatar-face">
-                          <div class="clay-eyes">
-                            <div class="eye"></div>
-                            <div class="eye"></div>
-                          </div>
-                          <div class="clay-smile"></div>
-                        </div>
+                  <div class="clay-phone-screen">
+                    <div class="clay-phone-header">
+                      <div class="clay-intro-text">
+                        <h4>Peter Parker</h4>
+                        <p>Let's plan your tasks</p>
                       </div>
-                    </div>
-                    
-                    <div class="clay-card-body">
-                      <h3>CLAY BUDDY</h3>
-                      <p>Hello! I am a soft 3D-style responsive component.</p>
+                      <span class="clay-bell">🔔</span>
                     </div>
 
-                    <div class="clay-toggles">
-                      <div class="clay-toggle-group">
-                        <span class="toggle-lbl">MUTE</span>
-                        <div class="clay-toggle" id="clay-toggle-mute">
-                          <div class="clay-toggle-thumb"></div>
-                        </div>
-                      </div>
-                      
-                      <div class="clay-toggle-group">
-                        <span class="toggle-lbl">SHADOW</span>
-                        <div class="clay-toggle active" id="clay-toggle-shadow">
-                          <div class="clay-toggle-thumb"></div>
-                        </div>
+                    <!-- Volumetric Clay Calendar Widget -->
+                    <div class="clay-calendar-card">
+                      <div class="cal-month">January 2022</div>
+                      <div class="cal-days-grid">
+                        <span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span>
+                        <span>10</span><span>11</span><span>12</span><span class="active">13</span><span>14</span><span>15</span><span>16</span>
                       </div>
                     </div>
 
-                    <button class="clay-btn">HUG ME</button>
+                    <!-- Dynamic Task List Row -->
+                    <div class="clay-activity-list">
+                      <div class="clay-activity-item work">
+                        <span class="tag">Work</span>
+                        <span class="desc">Claymorphic widgets</span>
+                      </div>
+                      <div class="clay-activity-item leisure">
+                        <span class="tag">Leisure</span>
+                        <span class="desc">Design review</span>
+                      </div>
+                    </div>
+
+                    <!-- Bottom Nav with Clay FAB -->
+                    <div class="clay-phone-nav">
+                      <span class="nav-icon active">🏠</span>
+                      <button class="clay-phone-fab" id="clay-btn-add">+</button>
+                      <span class="nav-icon">📅</span>
+                    </div>
                   </div>
                 </main>
                 
@@ -1000,8 +1004,7 @@
             </div>
 
             <div class="sandbox-hints">
-              <span class="hint-tag">Toggle the switches to trigger sliding clay animations</span>
-              <span class="hint-tag">Tap Hug Me button to squeeze card</span>
+              <span class="hint-tag">Tap the blue circular "+" button to trigger a dynamic bounce animation</span>
             </div>
           </div>
 
@@ -1019,8 +1022,8 @@
               <h4 class="mt-1">Color Palette (Click to Copy)</h4>
               <div class="color-palette">
                 <div class="color-swatch-wrapper">
-                  <div class="color-swatch" style="background-color: #FFB5D0;" data-hex="#FFB5D0"></div>
-                  <span class="swatch-label">#FFB5D0</span>
+                  <div class="color-swatch" style="background-color: #3B82F6;" data-hex="#3B82F6"></div>
+                  <span class="swatch-label">Clay Blue</span>
                 </div>
                 <div class="color-swatch-wrapper">
                   <div class="color-swatch" style="background-color: #A3D8F4;" data-hex="#A3D8F4"></div>
@@ -1047,19 +1050,19 @@
   - Base Background: Soft sky pastel blue #E0F2FE
   - Panel Background: Matte white clay #FCFDFE
   - Primary Text: Slate blue #4A5D6E
-  - Accent / Focus: Pastel pink #FFB5D0
+  - Accent / Focus: Vivid clay blue #3B82F6
 - TYPOGRAPHY:
   - Headings: Rounded, heavy weight, cheerful sans-serif
   - Body Text: Clean sans-serif
 - CONTAINERS & CARDS:
-  - Borders: 4px solid #FFFFFF
-  - Shadow: Volumetric inner highlights (inset 8px 8px 16px #ffffff) + inner shadows (inset -8px -8px 16px rgba(163,216,244,0.4)) + long soft drop shadow
-  - Radii: 32px
+  - Borders: 3px solid #FFFFFF
+  - Shadow: Volumetric inner highlights (inset 6px 6px 12px #ffffff) + inner shadows (inset -6px -6px 12px rgba(163,216,244,0.4)) + long soft drop shadow
+  - Radii: 24px - 28px
 - HEADER & FOOTER:
   - Height & Padding: Generous cushion margins
   - Borders: Thick white separators
 - INTERACTIVE ELEMENTS:
-  - Buttons: Fluffy pastel backgrounds, scales on hover, inset shadows on active press
+  - Buttons: Blue volumetric clay card, inset white shadow highlights on hover (inset 4px 4px 8px rgba(255,255,255,0.4))
   - Form Inputs: White borders, deep soft inner shadows
   - Toggles & Sliders: Rounded pill-shaped track, spherical clay knob thumb</pre>
                 <button class="btn btn-sm btn-secondary btn-copy-prompt">Copy Recipe</button>
@@ -1075,19 +1078,18 @@
               <button class="btn btn-sm btn-primary btn-copy-code">Copy Selected Code</button>
             </div>
             <div class="inspector-content">
-              <pre class="tab-panel active" id="code-claymorphism-css"><code>/* Claymorphism Styling */
-.clay-card {
-  background: #fcfdfe;
-  border-radius: 32px;
-  border: 4px solid #ffffff;
+              <pre class="tab-panel active" id="code-claymorphism-css"><code>/* Claymorphic 3D Card Tokens */
+.clay-calendar-card {
+  background: #3b82f6;
+  border-radius: 18px;
+  border: 2px solid #ffffff;
   box-shadow: 
-    0 20px 40px rgba(163, 216, 244, 0.35),
-    inset 8px 8px 16px #ffffff,
-    inset -8px -8px 16px rgba(163, 216, 244, 0.4);
+    0 10px 18px rgba(59, 130, 246, 0.35),
+    inset 4px 4px 8px rgba(255, 255, 255, 0.35),
+    inset -4px -4px 8px rgba(0, 0, 0, 0.2);
 }</code></pre>
-              <pre class="tab-panel" id="code-claymorphism-html"><code>&lt;div class="clay-card"&gt;
-  &lt;div class="clay-avatar"&gt;&lt;/div&gt;
-  &lt;button class="clay-btn"&gt;HUG ME&lt;/button&gt;
+              <pre class="tab-panel" id="code-claymorphism-html"><code>&lt;div class="clay-calendar-card"&gt;
+  &lt;div class="cal-month"&gt;January 2022&lt;/div&gt;
 &lt;/div&gt;</code></pre>
             </div>
           </div>
